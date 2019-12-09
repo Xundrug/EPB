@@ -58,8 +58,8 @@ Testing
         EPBLigCharge.py -p 1g5s     --------------  it will download pdb(id:1g5s) from RCSB PDB, and saved as 1g5s.dpb
                                                (Attention: make sure your machine is connect to network if you want download)
     After run it, three new file with exists in this contents:
-        1g5s.pdb               --------------  which you download from RCSB PDB(http://www.rcsb.org/pdb/home/home.do)
-        LigWithNewCharges.mol2 --------------  the new ligand mol2 file and the charge is update
+        1g5s.pdb                    --------------  which you download from RCSB PDB(http://www.rcsb.org/pdb/home/home.do)
+        LigWithNewCharges.mol2      --------------  the new ligand mol2 file and the charge is update
 
 
 
