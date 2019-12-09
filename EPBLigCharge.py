@@ -19,7 +19,7 @@ def calculate(options):
     from polarInfoData import Paras_info
     from recWithOpenmm import ProcessRec
     from ligWithPybel import ProcessLig
-    from ChargeWithEPB import UpdateCharge
+    from chargeWithEPB import UpdateCharge
 
     protein, ligand = options.protein_filename, options.ligand_filename
     temp_key, temp_direc, charge_model = options.temp_key, options.temp_name, options.charge_model
