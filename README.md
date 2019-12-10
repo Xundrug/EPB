@@ -2,11 +2,11 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
 ----------------------------------------------------------------------------------------
 EPB - Effective Polarizable Bond
 
-Author: GuanFu Duan, gfduan178@163.com
+Author: GuanFu Duan, gfduan178@163.com\r
+
 Supervisor: Changge Ji
 
-This a set of tools and Python modules for prepare the input files for docking package(eg: Glide、AutoDock、Sybyl) and simulation package(eg: CHARMM、Amber) with the update charge(using EPB method).
-The default output fileformat is mol2.
+This a set of tools and Python modules for prepare the input files for docking package(eg: Glide、AutoDock、Sybyl) and simulation package(eg: CHARMM、Amber) with the update charge(using EPB method). The default output fileformat is mol2.
 The origin charge of protein's atom by openmm and ligand atom origin charge from pybel
 
 All rights reversed 2019
