@@ -1,3 +1,10 @@
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# Replaceing Liagnd atom Charges based on EPB (Effective Polarizable Bond) Model
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
+
 class UpdateCharge(object):
     def __init__(self, *args):
         self.lig_args, self.rec_args, self.lig_polar_args, self.output_ligfile, self.out_form, self.temp_illustration = args
