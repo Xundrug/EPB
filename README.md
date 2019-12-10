@@ -48,15 +48,16 @@ Installation
 
 Instructions
 ---------
-    Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help" will show:
-       usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME] 
-                                   [-t {0,1}]
-                                   [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
-                                   [-k {0,1}] [-o OUT_LIG_NAME] [-f {mol2,pdb,None}]
-                                   [-n TEMP_NAME] [-u {0,1}]
-       A tool: Based on EPB(Effective Polarizable Bond) method to update molecule charges.
+>**Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"**
 
-       optional arguments:
+    usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME] 
+                                [-t {0,1}]
+                                [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
+                                [-k {0,1}] [-o OUT_LIG_NAME] [-f {mol2,pdb,None}]
+                                [-n TEMP_NAME] [-u {0,1}]
+    A tool: calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
+
+    optional arguments:
           -h, --help            show this help message and exit
           -p PROTEIN_FILENAME   Read the pdbid or receptor file(pdb).
           -l LIGAND_FILENAME    Read the ligand file.
