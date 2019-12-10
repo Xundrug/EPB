@@ -10,10 +10,10 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
     This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 
     All rights reversed 2019
-    
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/rcsb.png)
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openbabel.png)
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)
+
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/rcsb.png)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openbabel.png)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)
 
 
 Installation
@@ -83,6 +83,7 @@ Examples
   >**2. Calculate polarized ligand charge from a ligand file and a receptor file**
    
        run: EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
+            EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1
        
        the output: LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                    tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
