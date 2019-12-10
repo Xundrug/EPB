@@ -16,7 +16,7 @@ Installation
 ------------
 Follow these steps on Linux/OSX:
 
-    1、Download and install Python 2.7 or greater from https://conda.io/miniconda.html
+    1、Download and install Python (from https://conda.io/miniconda.html, and it version greater than 2.7)
        (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda3-latest-Linux-x86_64.sh)
        after download: chmod +x  Miniconda3-latest-Linux-x86_64.sh
                        ./Miniconda3-latest-Linux-x86_64.sh
@@ -53,8 +53,8 @@ Important
        usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME] 
                                    [-t {0,1}]
                                    [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
-                                   [-o OUT_LIG_NAME] [-f {mol2,pdb,None}] [-n TEMP_NAME]
-                                   [-u {0,1}]
+                                   [-k {0,1}] [-o OUT_LIG_NAME] [-f {mol2,pdb,None}]
+                                   [-n TEMP_NAME] [-u {0,1}]
        A tool: Based on EPB(Effective Polarizable Bond) method to update molecule charges.
 
        optional arguments:
