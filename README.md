@@ -81,7 +81,7 @@ Testing
 
 Instructions
 ------------
-   1、If you have a PDBID(eg: 1g5s, if no file -- 1a28.pdb -- in current directory, it will download it from RCSB PDB database)
+   1、If you have a PDBID(eg: 1g5s, if no file -- 1g5s.pdb -- in current directory, it will download it from RCSB PDB database)
       
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
@@ -111,9 +111,9 @@ Instructions
    
                                     EPBLigChrage.py -p 1g5s -t 1
 
-             the output: LigWithNewCharges.mol2, tmp_file 
+             the output: LigWithNewCharges.mol2, tmp_file (is a folder which store the temporary file)
              the middle temporary file will saved in tmp_file, the inforamtion of each temporary file write in tmp_file.dat,
-             and you can use -n to define the temporary directory and the illustrate filename also change at the same time.
+             and you can use "-n" to define the temporary directory and the illustrate filename also change at the same time.
    
    2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2)
                                  both of them is the protein file(format: pdb)
@@ -126,3 +126,22 @@ Instructions
       
    *** For example 3, the other option usage, you can get it from example 1.
        You can give the options in any position, but make sure the option key close to the option.
+
+Examples
+--------
+   1、Download the complex from RCSB PDB
+   
+                                    EPBLigCharge.py -p 1g5s -t 1
+      the output: 1g5s.pdb (download file)
+                  LigWithNewCharges.mol2 (the ligand file which update the atom charges)
+                  tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
+                  the tmp_file/ligand_charge.dat record the polar atom and the charge changes as:
+                  
+                  
+   2、use the local separate file contain receptor and ligand file
+   
+                                    EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
+       
+       the output: 1g5s.pdb (download file)
+                  LigWithNewCharges.mol2 (the ligand file which update the atom charges)
+                  tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
