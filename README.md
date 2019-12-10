@@ -87,6 +87,7 @@ Instructions
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
                                     EPBLigCharge.py -p 1g5s
+                                    
              the ouput file is: LigWithNewCharges.mol2
              
       * If you want to change the output file format, you can add -f options.
@@ -106,7 +107,13 @@ Instructions
 
                                     EPBLigCharge.py -p 1g5s -o 1g5s_new
        
-             the output file is: 1g5s_new.mol2 
+             the output file is: 1g5s_new.mol2
+      
+      * If you obtain the picture of the ligand, use "-k" options
+      
+                                    EPBLigCharge.py -p 1g5s -k 1
+              
+              the output file is: LigWithNewCharges.mol2, 1g5s_I15_A_400.png
        
       * If you want to reserve the Intermediate file in order to understand the process, you can add -t 1 option, eg:
    
