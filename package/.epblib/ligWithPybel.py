@@ -1,3 +1,10 @@
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# using pybel to convert ligand file
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
+
 class ProcessLig(object):
 
     def __init__(self, *args):
