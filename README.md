@@ -7,9 +7,9 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
 
     Supervisor: Changge Ji
 
-    This a set of tools and Python modules for prepare the input files for docking package(eg: Glide、AutoDock、Sybyl) and simulation package(eg: CHARMM、Amber) with the update charge(using EPB method). The default output fileformat is mol2.
+    This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 
-    The origin charge of protein's atom by openmm and ligand atom origin charge from pybel
+    
 
     All rights reversed 2019
     
@@ -22,12 +22,11 @@ Installation
 ------------
 >**Follow these steps on Linux/OSX:**
 
-    1、Download and install Python (from https://conda.io/miniconda.html, and it version greater than 2.7)
-       (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda3-latest-Linux-x86_64.sh)
+    1、Download and install Python (from https://conda.io/miniconda.html, Version>2.7)
+       (Example: If your system is ubuntu/Linux with 64-bit, please download the file Miniconda3-latest-Linux-x86_64.sh.)
        after download: chmod +x  Miniconda3-latest-Linux-x86_64.sh
                        ./Miniconda3-latest-Linux-x86_64.sh
-       (Attention: During setup, you'd better to choose yes option.)
-       
+              
     2、Open terminal in Mac/Linux, install openmm, pdbfixer, openbabel, pybel and run
        conda install -c omnia openmm pdbfixer
        conda install -c openbabel openbabel
@@ -36,15 +35,9 @@ Installation
        or install this module from local using "conda install --use-local Module/*.tar.bz2"
        
     3、Download and unzip EPB-master.zip
-       After you decompression this package and access it, the usage as follows:
-       method I: if the destination is /home/lidong/test
-                 cp -r bin /home/lidong/test
-                 cp EPBLigCharge.py /home/lidong/test
-                 chmod +x EPBLigCharge.py
-
-                 use "python EPBLigCharge.py -h/--help" or "./EPBLigCharge.py -h/--help" for help
+       After decompressing this package, please do the following:
     
-       method II: cd package
+                      cd package
                       chmod +x INSTALL.py .epblib/EPBLigCharge.py
                       ./INSTALL.py
                       source ~/.bashrc
