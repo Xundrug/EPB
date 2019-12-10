@@ -2,7 +2,7 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
 ----------------------------------------------------------------------------------------
 EPB - Effective Polarizable Bond
 
-Author: GuanFu Duan, gfduan178@163.com\r
+Author: GuanFu Duan, gfduan178@163.com
 
 Supervisor: Changge Ji
 
