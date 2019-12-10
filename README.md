@@ -1,11 +1,10 @@
 EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On EPB Model
 ----------------------------------------------------------------------------------------
-
-
-
 EPB - Effective Polarizable Bond
+
 Author: GuanFu Duan, gfduan178@163.com
 Supervisor: Changge Ji
+
 This a set of tools and Python modules for prepare the input files for docking package(eg: Glide、AutoDock、Sybyl) and simulation package(eg: CHARMM、Amber) with the update charge(using EPB method).
 The default output fileformat is mol2.
 The origin charge of protein's atom by openmm and ligand atom origin charge from pybel
@@ -47,7 +46,7 @@ Follow these steps on Linux/OSX:
 
 Testing
 -------
-    Please run the test(test pdbid: 1g5s) after you decompression this package and access it::
+    Please run the test(test pdbid: 1g5s) after you decompression this package and access it:
         EPBLigCharge.py             --------------  it will prompt you how to use this code
         EPBLigCharge.py -p 1g5s     --------------  it will download pdb(id:1g5s) from RCSB PDB, and saved as 1g5s.dpb
                                                (Attention: make sure your machine is connect to network if you want download)
@@ -91,7 +90,6 @@ Instructions
 
          The output: LigWithNewCharges.mol2, tmp_file 
          The Intermediate file will saved as tmp_file, the file name and inforamtion write in tmp_file.dat 
-   
    		  
    2、If you have a pdb file(eg: example1.pdb) and not contain ligand、confactor、ion or water
       (default output filename: update_receptor), eg：
