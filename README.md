@@ -46,11 +46,9 @@ Installation
        
 >***Sugguest using method II to install this procedure***
 
-Important
+Instructions
 ---------
-    1、You Must install Python and the Python version great than 2.7
-    2、The Program need some Python Module: openmm、pdbfixer、openbael and Pybel
-    3、Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help" will show:
+    Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help" will show:
        usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME] 
                                    [-t {0,1}]
                                    [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
@@ -71,66 +69,6 @@ Important
           -n TEMP_NAME          Define the directory name which store the temptorary file.
           -u {0,1}              When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.
 
-Instructions
-------------
-  >**1、If use PDB ID (such as: 1g5s) or filename (1g5s.pdb), if file not exists, it will download from RCSB PDB https://www.rcsb.org/)**
-      
-      * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
-        
-             EPBLigCharge.py -p 1g5s
-                                    
-             the ouput file is: LigWithNewCharges.mol2
-             
-      * If you want to change the output file format, you can add -f options.
-           * if you add the option -f pdb, eg:
-        
-             run: EPBLigCharge.py -p 1g5s -f pdb
-        
-             the ouput file is: LigWithNewCharges.pdb
-             
-           * if you add the option -f None (that is to say output file contain pdb and mol2), eg:
-        
-             run: EPBLigCharge.py -p 1g5s -f None
-        
-             the ouput file is: LigWithNewCharges.mol2, LigWithNewCharges.pdb
-             
-      * If you want to change the output filename, you can add -o options
-
-             run: EPBLigCharge.py -p 1g5s -o 1g5s_new
-       
-             the output file is: 1g5s_new.mol2
-      
-      * If you obtain the picture of the ligand, use "-k" options
-      
-              run: EPBLigCharge.py -p 1g5s -k 1
-              
-              the output file is: LigWithNewCharges.mol2, 1g5s_I15_A_400.png
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/example/1g5s_I17_A_400.png)
-       
-      * If you want to reserve the Intermediate file in order to understand the process, you can add -t 1 option, eg:
-   
-              run: EPBLigChrage.py -p 1g5s -t 1
-
-              the output: LigWithNewCharges.mol2, tmp_file (is a folder which store the temporary file)
-                          the middle temporary file will saved in tmp_file, the inforamtion of each temporary file write in tmp_file.dat,
-                          and you can use "-n" to define the temporary directory and the illustrate filename also change at the same time.
-              example:
-              
-              run: EPBLigChrage.py -p 1g5s -t 1 -n 1g5s_temp
-                                    
-              the output: LigWithNewCharges.mol2, 1g5s_temp (is a folder which store the temporary file)
-   
-  >**2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2) both of them is the protein file(format: pdb)**
-   
-      * if protein file name is 1g5s_receptor.pdb and ligand file name is 1g5s_ligand.pdb(or 1g5s_ligand.mol2), eg:
-        * if input format is pdb 
-          run: EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.pdb
-        
-        * if input format is mol2
-          run: EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
-      
-  >**For example 2, the other option usage, you can get it from example1. You can give the options in any position, but make sure the option key close to the option.**
-
 Examples
 --------
   >**1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**
@@ -141,44 +79,9 @@ Examples
                   LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
                   
-                  the tmp_file.dat contains temporary information as follows:
-                  ==========================================================================
-                  # receptor part of the complex.
-                        1g5s_receptor_receptor.pdb
-                  # Parameters of MMFF94 force field.
-                        mmff94.dat
-                  # Parameters of polar bond in small molecule.
-                        ligand.database
-                  # receptor file with hydrogens and missing residues & atoms added by openmm.
-                        1g5s_receptor_receptor_h.pdb
-                  # receptor file with charge from amber99sb field.
-                        rec_opemmm.pdb
-                  # ligand file with charge from mmff94(charge model: mmff94).
-                        lig_mmff94.mol2
-                  # The ligand polar bond info(contain: atom,charge change).
-                        ligand_charge.dat
-                  ==========================================================================
-                  
-                  the tmp_file/ligand_charge.dat record the polar atom and the charge changes as:
-                  ;======================================================================================
-                  ;                                                           CHARGE
-                  ;  ATOM1   ATOM2  hybrid1  hybrid2         OLD-I      OLD-II      NEW-I       NEW-II
-                  ;--------------------------------------------------------------------------------------
-                  ************************************* molecule 1 *************************************
-                      N18       H    N.pl3      H         -0.317400    0.186800   -0.358604    0.228004
-                      N10       H    N.pl3      H         -0.296000    0.208500   -0.310092    0.222592
-                      N17       H      N.3      H         -0.349900    0.125200   -0.403679    0.170825
-                      N17       H      N.3      H         -0.349900    0.125200   -0.403679    0.170825
-                  ;======================================================================================
-                       where column 1 and 2 represents the atom name, column 3 and 4 is the hybrid state in sybyl mol2 format,
-                  column 5 and 6 is the origin charge of two atoms from mol2 file (using pybel or read in the input mol2 file),
-                  column 7 and 8 is the updating charge os two atoms which under protein environments depend on EPB Model.
-                  
-                  
   >**2. Calculate polarized ligand charge from a ligand file and a receptor file**
    
        run: EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
        
-       the output: 1g5s.pdb (download file)
-                  LigWithNewCharges.mol2 (the ligand file which update the atom charges)
-                  tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
+       the output: LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
+                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
