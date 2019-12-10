@@ -50,8 +50,8 @@ Important
     1、You Must install Python and the Python version great than 2.7
     2、The Program need some Python Module: openmm、pdbfixer、openbael and Pybel
     3、Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help" will show:
-       usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME]
-                                   [-l LIGAND_FILENAME] [-t {0,1}]
+       usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME] 
+                                   [-t {0,1}]
                                    [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
                                    [-o OUT_LIG_NAME] [-f {mol2,pdb,None}] [-n TEMP_NAME]
                                    [-u {0,1}]
