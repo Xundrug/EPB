@@ -31,9 +31,8 @@ def calculate(options):
 
     if os.path.exists(temp_file): os.unlink(temp_file)
     input_lig = 'empty'
-    rec1 = protein[0].strip()
     if ligand: input_lig = ligand
-    Complex(rec1, temp_file).split_pdb()
+    Complex(protein.strip(), temp_file).split_pdb()
     Paras_info(temp_file).mmff94_charge()
     lig_polar_args = Paras_info(temp_file).ligand_paras()
     rec_args = ProcessRec(temp_file).receptor_charge()
@@ -53,7 +52,7 @@ def calculate(options):
     if temp_key == 0: shutil.rmtree(temp_direc)
 
 if __name__ == '__main__':
-    import sys, getpass, argparse
+    import sys, argparse
     scripts = 'Based on EPB(Effective Polarizable Bond) method to update molecule charges.'
     parser = argparse.ArgumentParser(description="\033[1;31mA tool:\033[0m \033[1;36m%s\033[0m" %scripts)
     parser.add_argument('-p', action="store", dest="protein_filename", help="Read the pdbid or receptor file(pdb).")
