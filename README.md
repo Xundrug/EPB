@@ -44,6 +44,8 @@ Follow these steps on Linux/OSX:
                       source ~/.bashrc
 
                   use "EPBLigCharge.py -h/--help" for help
+       
+       Default: you use method II install this procedure
 
 Important
 ---------
@@ -76,66 +78,68 @@ Instructions
       
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
-                                    EPBLigCharge.py -p 1g5s
+             EPBLigCharge.py -p 1g5s
                                     
              the ouput file is: LigWithNewCharges.mol2
              
       * If you want to change the output file format, you can add -f options.
            * if you add the option -f pdb, eg:
         
-                                    EPBLigCharge.py -p 1g5s -f pdb
+             run: EPBLigCharge.py -p 1g5s -f pdb
         
              the ouput file is: LigWithNewCharges.pdb
              
            * if you add the option -f None (that is to say output file contain pdb and mol2), eg:
         
-                                    EPBLigCharge.py -p 1g5s -f None
+             run: EPBLigCharge.py -p 1g5s -f None
         
              the ouput file is: LigWithNewCharges.mol2, LigWithNewCharges.pdb
              
       * If you want to change the output filename, you can add -o options
 
-                                    EPBLigCharge.py -p 1g5s -o 1g5s_new
+             run: EPBLigCharge.py -p 1g5s -o 1g5s_new
        
              the output file is: 1g5s_new.mol2
       
       * If you obtain the picture of the ligand, use "-k" options
       
-                                    EPBLigCharge.py -p 1g5s -k 1
+              run: EPBLigCharge.py -p 1g5s -k 1
               
               the output file is: LigWithNewCharges.mol2, 1g5s_I15_A_400.png
        
       * If you want to reserve the Intermediate file in order to understand the process, you can add -t 1 option, eg:
    
-                                    EPBLigChrage.py -p 1g5s -t 1
+              run: EPBLigChrage.py -p 1g5s -t 1
 
-             the output: LigWithNewCharges.mol2, tmp_file (is a folder which store the temporary file)
-             the middle temporary file will saved in tmp_file, the inforamtion of each temporary file write in tmp_file.dat,
-             and you can use "-n" to define the temporary directory and the illustrate filename also change at the same time.
-             example:
-                                    EPBLigChrage.py -p 1g5s -t 1 -n 1g5s_temp
+              the output: LigWithNewCharges.mol2, tmp_file (is a folder which store the temporary file)
+                          the middle temporary file will saved in tmp_file, the inforamtion of each temporary file write in tmp_file.dat,
+                          and you can use "-n" to define the temporary directory and the illustrate filename also change at the same time.
+              example:
+              
+              run: EPBLigChrage.py -p 1g5s -t 1 -n 1g5s_temp
                                     
-             the output: LigWithNewCharges.mol2, 1g5s_temp (is a folder which store the temporary file)
+              the output: LigWithNewCharges.mol2, 1g5s_temp (is a folder which store the temporary file)
    
    2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2)
                                  both of them is the protein file(format: pdb)
    
       * if protein file name is 1g5s_receptor.pdb and ligand file name is 1g5s_ligand.pdb(or 1g5s_ligand.mol2), eg:
+        * if input format is pdb 
+          run: EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.pdb
+        
+        * if input format is mol2
+          run: EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
       
-                                    EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.pdb
-                  
-                                    EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
-      
-   *** For example 3, the other option usage, you can get it from example 1.
+   *** For example 2, the other option usage, you can get it from example 1.
        You can give the options in any position, but make sure the option key close to the option.
 
 Examples
 --------
    1、Download the complex from RCSB PDB (https://www.rcsb.org/)
    
-                                    EPBLigCharge.py -p 1g5s -t 1
+      run: EPBLigCharge.py -p 1g5s -t 1
                                     
-      the output: 1g5s.pdb (download file)
+      the output: 1g5s.pdb (download or use local file)
                   LigWithNewCharges.mol2 (the ligand file which update the atom charges)
                   tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
                   
@@ -177,7 +181,7 @@ Examples
                   
    2、use the local separate file contain receptor and ligand file
    
-                                    EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
+       run: EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
        
        the output: 1g5s.pdb (download file)
                   LigWithNewCharges.mol2 (the ligand file which update the atom charges)
