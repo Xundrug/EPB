@@ -12,6 +12,7 @@ All rights reversed 2019
 
 
 INSTALLATION
+------------
 Follow these steps on Linux/OSX:
     1、Download and install Python 2.7 or greater from https://conda.io/miniconda.html
        (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda3-latest-Linux-x86_64.sh)
