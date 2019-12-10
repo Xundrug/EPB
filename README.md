@@ -1,5 +1,5 @@
-EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On EPB Model
-EPB - Effective Polarizable Bond
+EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On EPB Model\n
+EPB - Effective Polarizable Bond\n
 
 Author: GuanFu Duan, gfduan178@163.com
 Supervisor: Changge Ji
