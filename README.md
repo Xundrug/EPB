@@ -133,30 +133,28 @@ Instructions
 
 Examples
 --------
-  >**1、Download the complex from RCSB PDB (https://www.rcsb.org/)**
+  >**1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**
    
       run: EPBLigCharge.py -p 1g5s -t 1
                                     
       the output: 1g5s.pdb (download or use local file)
-                  LigWithNewCharges.mol2 (the ligand file which update the atom charges)
-                  tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
+                  LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
+                  tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
                   
-                  the tmp_file.dat record information as follows:
+                  the tmp_file.dat contains temporary information as follows:
                   ==========================================================================
-                  # receptor part from complex with split code.
+                  # receptor part of the complex.
                         1g5s_receptor_receptor.pdb
-                  # The parameters of residue charge information under force field(MMFF94).
+                  # Parameters of MMFF94 force field.
                         mmff94.dat
-                  # The parameters of polar bond in small molecule.
+                  # Parameters of polar bond in small molecule.
                         ligand.database
-                  # add hydrogens and missing residues & atoms by openmm.
+                  # receptor file with hydrogens and missing residues & atoms added by openmm.
                         1g5s_receptor_receptor_h.pdb
-                  # write pdb file with charge from amber99sb field.
+                  # receptor file with charge from amber99sb field.
                         rec_opemmm.pdb
-                  # ligand with charge from pybel(charge model: gasteiger).
-                        lig_pybel.mol2
-                  # molecule split 1.
-                        LigWithNewCharges1.mol2
+                  # ligand file with charge from mmff94(charge model: mmff94).
+                        lig_mmff94.mol2
                   # The ligand polar bond info(contain: atom,charge change).
                         ligand_charge.dat
                   ==========================================================================
@@ -177,7 +175,7 @@ Examples
                   column 7 and 8 is the updating charge os two atoms which under protein environments depend on EPB Model.
                   
                   
-  >**2、use the local separate file contain receptor and ligand file**
+  >**2. Calculate polarized ligand charge from a ligand file and a receptor file**
    
        run: EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
        
