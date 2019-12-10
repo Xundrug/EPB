@@ -12,7 +12,7 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
 
     All rights reversed 2019
 
-INSTALLATION
+Installation
 ------------
 Follow these steps on Linux/OSX:
 
@@ -75,7 +75,7 @@ Testing
         EPBLigCharge.py             --------------  it will prompt you how to use this code
         EPBLigCharge.py -p 1g5s     --------------  it will download pdb(PDB ID:1g5s) from RCSB PDB, and saved as 1g5s.dpb
                                                     (Attention: make sure your machine is connect to network if you want download)
-    After run it, three new file with exists in this contents:
+    After run it, two new file with exists in this contents:
         1g5s.pdb                    --------------  which you download from RCSB PDB(http://www.rcsb.org/pdb/home/home.do)
         LigWithNewCharges.mol2      --------------  the new ligand mol2 file and the charge is update
 
