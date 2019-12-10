@@ -1,5 +1,5 @@
 EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On EPB Model
-----------------------------------------------------------------------------------------
+========================================================================================
     EPB - Effective Polarizable Bond
 
     Author: GuanFu Duan, gfduan178@163.com
@@ -45,7 +45,7 @@ Follow these steps on Linux/OSX:
 
                   use "EPBLigCharge.py -h/--help" for help
        
-Sugguest use method II to install this procedure
+Sugguest using method II to install this procedure
 
 Important
 ---------
