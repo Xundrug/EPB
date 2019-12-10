@@ -45,7 +45,7 @@ Follow these steps on Linux/OSX:
 
                   use "EPBLigCharge.py -h/--help" for help
        
-       Default: you use method II install this procedure
+Sugguest use method II to install this procedure
 
 Important
 ---------
