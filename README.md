@@ -70,19 +70,9 @@ Important
           -n TEMP_NAME          Define the directory name which store the temptorary file.
           -u {0,1}              When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.
 
-Testing
--------
-    Please run the test(test pdbid: 1g5s) after you decompression this package and access it:
-        EPBLigCharge.py             --------------  it will prompt you how to use this code
-        EPBLigCharge.py -p 1g5s     --------------  it will download pdb(PDB ID:1g5s) from RCSB PDB, and saved as 1g5s.dpb
-                                                    (Attention: make sure your machine is connect to network if you want download)
-    After run it, two new file with exists in this contents:
-        1g5s.pdb                    --------------  which you download from RCSB PDB(http://www.rcsb.org/pdb/home/home.do)
-        LigWithNewCharges.mol2      --------------  the new ligand mol2 file and the charge is update
-
 Instructions
 ------------
-   1、If you have a PDBID(eg: 1g5s, if no file -- 1g5s.pdb -- in current directory, it will download it from RCSB PDB database)
+   1、If you have a PDBID(eg: 1g5s, if no file -- 1g5s.pdb -- in current directory, it will download it from RCSB PDB http://www.rcsb.org/pdb/home/home.do)
       
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
@@ -141,9 +131,10 @@ Instructions
 
 Examples
 --------
-   1、Download the complex from RCSB PDB
+   1、Download the complex from RCSB PDB (http://www.rcsb.org/pdb/home/home.do)
    
                                     EPBLigCharge.py -p 1g5s -t 1
+                                    
       the output: 1g5s.pdb (download file)
                   LigWithNewCharges.mol2 (the ligand file which update the atom charges)
                   tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
