@@ -26,7 +26,7 @@ def calculate(options):
     protein, ligand = options.protein_filename, options.ligand_filename
     temp_key, temp_direc, charge_model = options.temp_key, options.temp_name, options.charge_model
     out_form, out_lig = options.out_format, options.out_lig_name
-    unchageCharge = options.use_mol2_charge
+    unchageCharge, draw_key = options.use_mol2_charge, options.draw_key
     temp_file = '%s.dat' % temp_direc
 
     if os.path.exists(temp_file): os.unlink(temp_file)
@@ -37,9 +37,9 @@ def calculate(options):
     lig_polar_args = Paras_info(temp_file).ligand_paras()
     rec_args = ProcessRec(temp_file).receptor_charge()
     if input_lig == 'empty':
-        lig_args = ProcessLig(temp_file, charge_model).ligand_charge(mol2charge=unchageCharge)
+        lig_args = ProcessLig(temp_file, charge_model, draw_key).ligand_charge(mol2charge=unchageCharge)
     else:
-        lig_args = ProcessLig(temp_file, charge_model, input_lig).ligand_charge(mol2charge=unchageCharge)
+        lig_args = ProcessLig(temp_file, charge_model, draw_key, input_lig).ligand_charge(mol2charge=unchageCharge)
     if os.path.exists(temp_direc): shutil.rmtree(temp_direc)
     r1 = UpdateCharge(lig_args, rec_args, lig_polar_args, out_lig, out_form, temp_file)
     r1.polar_ligand()
@@ -63,6 +63,8 @@ if __name__ == '__main__':
                               choices=['eem', 'eem2015ba', 'eem2015bm', 'eem2015bn', 'eem2015ha', 'eem2015hm',
                                        'eem2015hn', 'eqeq', 'fromfile', 'gasteiger', 'mmff94', 'none', 'qeq', 'qtpie'],
                               help="the charge model using in pybel format convert.")
+    parser.add_argument('-k', action="store", dest="draw_lig", type=int, default=0, choices=[0, 1],
+                              help="Whether draw the ligand picture, 0)No(default), 1)Yes.")
     parser.add_argument('-o', action="store", dest="out_lig_name", type=str, default="LigWithNewCharges",
                               help="Define the output filename.")
     parser.add_argument('-f', action="store", dest="out_format", type=str, default="mol2", choices=['mol2', 'pdb', 'None'],
