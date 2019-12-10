@@ -32,18 +32,18 @@ Follow these steps on Linux/OSX:
     3、Download and unzip EPB-master.zip
        After you decompression this package and access it, the usage as follows:
        method I: if the destination is /home/lidong/test
-              cp -r bin /home/lidong/test
-              cp EPBLigCharge.py /home/lidong/test
-              chmod +x EPBLigCharge.py
+                 cp -r bin /home/lidong/test
+                 cp EPBLigCharge.py /home/lidong/test
+                 chmod +x EPBLigCharge.py
 
-              use "python EPBLigCharge.py -h/--help" or "./EPBLigCharge.py -h/--help" for help
+                 use "python EPBLigCharge.py -h/--help" or "./EPBLigCharge.py -h/--help" for help
     
        method II: cd package
-                   chmod +x INSTALL.py .epblib/EPBLigCharge.py
-                   ./INSTALL.py
-                   source ~/.bashrc
+                      chmod +x INSTALL.py .epblib/EPBLigCharge.py
+                      ./INSTALL.py
+                      source ~/.bashrc
 
-                use "EPBLigCharge.py -h/--help" for help
+                  use "EPBLigCharge.py -h/--help" for help
 
 Important
 ---------
@@ -73,13 +73,11 @@ Testing
 -------
     Please run the test(test pdbid: 1g5s) after you decompression this package and access it:
         EPBLigCharge.py             --------------  it will prompt you how to use this code
-        EPBLigCharge.py -p 1g5s     --------------  it will download pdb(id:1g5s) from RCSB PDB, and saved as 1g5s.dpb
-                                               (Attention: make sure your machine is connect to network if you want download)
+        EPBLigCharge.py -p 1g5s     --------------  it will download pdb(PDB ID:1g5s) from RCSB PDB, and saved as 1g5s.dpb
+                                                    (Attention: make sure your machine is connect to network if you want download)
     After run it, three new file with exists in this contents:
         1g5s.pdb                    --------------  which you download from RCSB PDB(http://www.rcsb.org/pdb/home/home.do)
         LigWithNewCharges.mol2      --------------  the new ligand mol2 file and the charge is update
-
-
 
 Instructions
 ------------
@@ -88,48 +86,43 @@ Instructions
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
                                     EPBLigCharge.py -p 1g5s
-        
-     * If you want to change the output file format, you can add -f options.
-        * if you add the option -f pdb, eg:
+             the ouput file is: LigWithNewCharges.mol2
+             
+      * If you want to change the output file format, you can add -f options.
+           * if you add the option -f pdb, eg:
         
                                     EPBLigCharge.py -p 1g5s -f pdb
         
-          the ouput file is: LigWithNewCharges.pdb 
-        * if you add the option -f None (that is to say contain pdb and mol2), eg:
+             the ouput file is: LigWithNewCharges.pdb
+             
+           * if you add the option -f None (that is to say output file contain pdb and mol2), eg:
         
                                     EPBLigCharge.py -p 1g5s -f None
         
-          the ouput file is: LigWithNewCharges.mol2, LigWithNewCharges.pdb 
-     
-     
-     * If you want to change the output filename, you can add -o options
+             the ouput file is: LigWithNewCharges.mol2, LigWithNewCharges.pdb
+             
+      * If you want to change the output filename, you can add -o options
 
                                     EPBLigCharge.py -p 1g5s -o 1g5s_new
        
-       The output file is: 1g5s_new.mol2 
+             the output file is: 1g5s_new.mol2 
        
-       
-     * If you want to reserve the Intermediate file in order to understand the process, you can add -t 1 option, eg:
+      * If you want to reserve the Intermediate file in order to understand the process, you can add -t 1 option, eg:
    
                                     EPBLigChrage.py -p 1g5s -t 1
 
-         The output: LigWithNewCharges.mol2, tmp_file 
-         The Intermediate file will saved as tmp_file, the file name and inforamtion write in tmp_file.dat 
-   		  
-   2、If you have a pdb file(eg: example1.pdb) and not contain ligand、confactor、ion or water
-      (default output filename: update_receptor), eg：
+             the output: LigWithNewCharges.mol2, tmp_file 
+             the middle temporary file will saved in tmp_file, the inforamtion of each temporary file write in tmp_file.dat,
+             and you can use -n to define the temporary directory and the illustrate filename also change at the same time.
    
-                                   EPBLigCharge.py -p example1.pdb
-   
-   3、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2)
+   2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2)
                                  both of them is the protein file(format: pdb)
    
       * if protein file name is 1g5s_receptor.pdb and ligand file name is 1g5s_ligand.pdb(or 1g5s_ligand.mol2), eg:
       
-                                   EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.pdb
+                                    EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.pdb
                   
-                                   EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
+                                    EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
       
-
-   *** For example 2 and example 3, the other option usage, you can get it from example 1.
+   *** For example 3, the other option usage, you can get it from example 1.
        You can give the options in any position, but make sure the option key close to the option.
