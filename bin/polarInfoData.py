@@ -1,3 +1,10 @@
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# polar bond define and the receptor charge with amber99SB
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
+
 class Paras_info(object):
 
     def __init__(self, temp_illustration):
