@@ -1,7 +1,7 @@
 EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On EPB Model
 ========================================================================================
 
-***EPB - Effective Polarizable Bond***
+>***EPB - Effective Polarizable Bond***
 
     Author: GuanFu Duan, gfduan178@163.com
 
@@ -136,8 +136,7 @@ Instructions
         * if input format is mol2
           run: EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
       
-   *** For example 2, the other option usage, you can get it from example 1.
-       You can give the options in any position, but make sure the option key close to the option.
+  **For example 2, the other option usage, you can get it from example1. You can give the options in any position, but make sure the option key close to the option.**
 
 Examples
 --------
