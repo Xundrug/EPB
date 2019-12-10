@@ -50,7 +50,7 @@ def calculate(options):
 
 if __name__ == '__main__':
     import sys, getpass, argparse
-    scripts = 'Based on EPB(Effective Polarizable Bond) method to update molecule charges.'
+    scripts = 'calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.'
     parser = argparse.ArgumentParser(description="\033[1;31mA tool:\033[0m \033[1;36m%s\033[0m" %scripts)
     parser.add_argument('-p', action="store", dest="protein_filename", help="Read the pdbid or receptor file(pdb).")
     parser.add_argument('-l', action="store", dest="ligand_filename", help="Read the ligand file.")
