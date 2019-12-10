@@ -10,54 +10,35 @@ The origin charge of protein's atom by openmm and ligand atom origin charge from
 
 All rights reversed 2019
 
-Dependencies:
--------------
 
-    To install it, make sure you have Python 2.7 or greater installed.
-    Requires conda [1], openmm [2], pdbfixer [3], openbabel [4] and pybel [5] to be installed on system.
-    If your system missing [2],[3],[4],[5] python modules, you can install this using three ways: conda install, 
-    pip install or get source to install. And if you want to install it with conda, follow these steps on Linux/Ubuntu:
-
-    1、install conda
-       according to your system version, you can get the source as a sh-file from https://conda.io/miniconda.html
-       (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda2-latest-Linux-x86_64.sh)
-       after download: chmod +x  Miniconda2-latest-Linux-x86_64.sh
-                       ./Miniconda2-latest-Linux-x86_64.sh
+INSTALLATION
+Follow these steps on Linux/OSX:
+    1、Download and install Python 2.7 or greater from https://conda.io/miniconda.html
+       (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda3-latest-Linux-x86_64.sh)
+       after download: chmod +x  Miniconda3-latest-Linux-x86_64.sh
+                       ./Miniconda3-latest-Linux-x86_64.sh
        (Attention: During setup, you'd better to choose yes option.)
-
-    2、install openmm
-       conda install -c omnia openmm
-
-    3、install pdbfixer
-       conda install -c omnia pdbfixer
-
-    4、install openbabel
-       conda install -c openbabel openbabel 
-
-    5、pip install pybel
-    
-    (install method II: conda install --use-local Module/*.tar.bz2)
-
-
-Package describe
-----------------
-
-    After you decompression this package and access it:
-    method I: if the destination is /home/lidong/test
+    2、Open terminal in Mac/Linux, install openmm, pdbfixer, openbabel, pybel and run
+       conda install -c omnia openmm pdbfixer
+       conda install -c openbabel openbabel
+       pip install pybel
+       
+       or install this module from local using "conda install --use-local Module/*.tar.bz2"
+    3、Download and unzip EPB-master.zip
+       After you decompression this package and access it, the usage as follows:
+       method I: if the destination is /home/lidong/test
               cp -r bin /home/lidong/test
               cp EPBLigCharge.py /home/lidong/test
               chmod +x EPBLigCharge.py
 
               use "python EPBLigCharge.py -h/--help" or "./EPBLigCharge.py -h/--help" for help
     
-    method II: cd package
+       method II: cd package
                    chmod +x INSTALL.py .epblib/EPBLigCharge.py
                    ./INSTALL.py
                    source ~/.bashrc
 
                 use "EPBLigCharge.py -h/--help" for help
-
-
 
 Testing
 -------
@@ -71,8 +52,8 @@ Testing
 
 
 
-Example
--------
+Instructions
+-------------
 
    1、If you have a PDBID(eg: 1g5s, if no file -- 1a28.pdb -- in current directory, it will download it from RCSB PDB database)
       
