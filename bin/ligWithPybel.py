@@ -12,13 +12,14 @@ class ProcessLig(object):
         self.args = list(args)
         self.temp_illustration = self.args[0]
         self.charge_model = self.args[1]
+        self.draw_key = self.args[2]
         self.line = [_.strip() for _ in open(self.temp_illustration)]
         lig_label = '# small molecule part from complex with split code.'
         self.name = 'empty_ligand.pdb'
         if lig_label in self.line:
             self.name = self.line[self.line.index(lig_label)+1]
         else:
-            if len(self.args) == 2:
+            if len(self.args) == 3:
                 os.mknod('empty_ligand.pdb')
                 with open(self.temp_illustration, 'a') as tmp_f0:
                     tmp_f0.write('# To avoid failure when itself without ligand, build a empty ligand file.\n\t%s\n' %self.name)
@@ -48,6 +49,7 @@ class ProcessLig(object):
                 out_put = pybel.Outputfile('mol2', 'lig_pybel_tmp.mol2')
                 mol = list(pybel.readfile(in_format, in_put))[0]
                 mol.addh()
+                if self.draw_key: mol.draw(show=False, filename='%s.png' %lig_file.split('.')[0])
                 mol.calccharges(model=self.charge_model)
                 out_put.write(mol)
                 lig_object.writelines([_ for _ in open('lig_pybel_tmp.mol2')])
