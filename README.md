@@ -72,7 +72,7 @@ Important
 
 Instructions
 ------------
-   1、If you have a PDBID(eg: 1g5s, if no file -- 1g5s.pdb -- in current directory, it will download it from RCSB PDB http://www.rcsb.org/pdb/home/home.do)
+   1、If use PDB ID (such as: 1g5s) or filename (1g5s.pdb), if file not exists, it will download from RCSB PDB https://www.rcsb.org/)
       
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
@@ -131,13 +131,34 @@ Instructions
 
 Examples
 --------
-   1、Download the complex from RCSB PDB (http://www.rcsb.org/pdb/home/home.do)
+   1、Download the complex from RCSB PDB (https://www.rcsb.org/)
    
                                     EPBLigCharge.py -p 1g5s -t 1
                                     
       the output: 1g5s.pdb (download file)
                   LigWithNewCharges.mol2 (the ligand file which update the atom charges)
                   tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
+                  
+                  the tmp_file.dat record information as follows:
+                  ==========================================================================
+                  # receptor part from complex with split code.
+                        1g5s_receptor_receptor.pdb
+                  # The parameters of residue charge information under force field(MMFF94).
+                        mmff94.dat
+                  # The parameters of polar bond in small molecule.
+                        ligand.database
+                  # add hydrogens and missing residues & atoms by openmm.
+                        1g5s_receptor_receptor_h.pdb
+                  # write pdb file with charge from amber99sb field.
+                        rec_opemmm.pdb
+                  # ligand with charge from pybel(charge model: gasteiger).
+                        lig_pybel.mol2
+                  # molecule split 1.
+                        LigWithNewCharges1.mol2
+                  # The ligand polar bond info(contain: atom,charge change).
+                        ligand_charge.dat
+                  ==========================================================================
+                  
                   the tmp_file/ligand_charge.dat record the polar atom and the charge changes as:
                   ;======================================================================================
                   ;                                                           CHARGE
