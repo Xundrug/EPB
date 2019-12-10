@@ -6,7 +6,9 @@ Supervisor: Changge Ji
 
 This a set of tools and Python modules for prepare the input files for docking package(eg: Glide、AutoDock、Sybyl) and simulation package(eg: CHARMM、Amber) with the update charge(using EPB method).
 The default output fileformat is mol2.
-The origin charge of protein's atom by openmm and ligand atom origin charge from pybel 
+The origin charge of protein's atom by openmm and ligand atom origin charge from pybel
+
+All rights reversed 2019
 
 Dependencies:
 -------------
