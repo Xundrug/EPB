@@ -1,6 +1,12 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# install the updating ligand charge code in system environment
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
 
 if __name__ == '__main__':
     import os, getpass, shutil, sys
