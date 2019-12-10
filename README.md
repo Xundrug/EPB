@@ -20,7 +20,7 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
 
 Installation
 ------------
-**Follow these steps on Linux/OSX:**
+>**Follow these steps on Linux/OSX:**
 
     1、Download and install Python (from https://conda.io/miniconda.html, and it version greater than 2.7)
        (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda3-latest-Linux-x86_64.sh)
@@ -51,7 +51,7 @@ Installation
 
                   use "EPBLigCharge.py -h/--help" for help
        
-***Sugguest using method II to install this procedure***
+>***Sugguest using method II to install this procedure***
 
 Important
 ---------
@@ -80,7 +80,7 @@ Important
 
 Instructions
 ------------
-  **1、If use PDB ID (such as: 1g5s) or filename (1g5s.pdb), if file not exists, it will download from RCSB PDB https://www.rcsb.org/)**
+  >**1、If use PDB ID (such as: 1g5s) or filename (1g5s.pdb), if file not exists, it will download from RCSB PDB https://www.rcsb.org/)**
       
       * If use the default options, it will only update the ligand polar atom charges, and the default output is LigWithNewCharges.mol2 
         
@@ -127,7 +127,7 @@ Instructions
                                     
               the output: LigWithNewCharges.mol2, 1g5s_temp (is a folder which store the temporary file)
    
-  **2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2) both of them is the protein file(format: pdb)**
+  >**2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2) both of them is the protein file(format: pdb)**
    
       * if protein file name is 1g5s_receptor.pdb and ligand file name is 1g5s_ligand.pdb(or 1g5s_ligand.mol2), eg:
         * if input format is pdb 
@@ -136,11 +136,11 @@ Instructions
         * if input format is mol2
           run: EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
       
-  **For example 2, the other option usage, you can get it from example1. You can give the options in any position, but make sure the option key close to the option.**
+  >**For example 2, the other option usage, you can get it from example1. You can give the options in any position, but make sure the option key close to the option.**
 
 Examples
 --------
-  **1、Download the complex from RCSB PDB (https://www.rcsb.org/)**
+  >**1、Download the complex from RCSB PDB (https://www.rcsb.org/)**
    
       run: EPBLigCharge.py -p 1g5s -t 1
                                     
@@ -184,7 +184,7 @@ Examples
                   column 7 and 8 is the updating charge os two atoms which under protein environments depend on EPB Model.
                   
                   
-  **2、use the local separate file contain receptor and ligand file**
+  >**2、use the local separate file contain receptor and ligand file**
    
        run: EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
        
