@@ -20,7 +20,7 @@ Installation
 ------------
 >***Follow these steps on Linux/OSX:***
 
-    1、Download and install Python (from https://conda.io/miniconda.html, Version>2.7)
+    1、Download and install Python (from https://conda.io/miniconda.html, Version > 2.7)
        (Example: If your system is ubuntu/Linux with 64-bit, please download the file Miniconda3-latest-Linux-x86_64.sh.)
        after download: chmod +x  Miniconda3-latest-Linux-x86_64.sh
                        ./Miniconda3-latest-Linux-x86_64.sh
