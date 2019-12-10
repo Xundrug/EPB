@@ -127,9 +127,7 @@ Instructions
       * if protein file name is 1g5s_receptor.pdb and ligand file name is 1g5s_ligand.pdb(or 1g5s_ligand.mol2), eg:
       
                                    EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.pdb
-                          
-                          or       
-                          
+                  
                                    EPBLigCharge.py -p 1g5s_receptor.pdb -l 1g5s_ligand.mol2
       
 
