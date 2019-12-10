@@ -15,11 +15,13 @@ All rights reversed 2019
 INSTALLATION
 ------------
 Follow these steps on Linux/OSX:
+
     1、Download and install Python 2.7 or greater from https://conda.io/miniconda.html
        (Example: your system is ubuntu/Linux with 64-bit, and download file name is Miniconda3-latest-Linux-x86_64.sh)
        after download: chmod +x  Miniconda3-latest-Linux-x86_64.sh
                        ./Miniconda3-latest-Linux-x86_64.sh
        (Attention: During setup, you'd better to choose yes option.)
+       
     2、Open terminal in Mac/Linux, install openmm, pdbfixer, openbabel, pybel and run
        conda install -c omnia openmm pdbfixer
        conda install -c openbabel openbabel
