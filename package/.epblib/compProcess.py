@@ -1,3 +1,10 @@
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# Download PDB file from RCSB PDB (https://files.rcsb.org/download/) and split it with receptor, water, ligand, ion
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
+
 class Complex(object):
     def __init__(self, pdb_id, temp_illustration):
         self.pdb_file = pdb_id.strip()
