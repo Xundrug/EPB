@@ -1,3 +1,10 @@
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# process recptor with openmm
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
+
 class ProcessRec(object):
 
     def __init__(self, temp_illustration):
