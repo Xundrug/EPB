@@ -55,19 +55,19 @@ Important
                                    [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
                                    [-o OUT_LIG_NAME] [-f {mol2,pdb,None}] [-n TEMP_NAME]
                                    [-u {0,1}]
-    A tool: Based on EPB(Effective Polarizable Bond) method to update molecule charges.
+       A tool: Based on EPB(Effective Polarizable Bond) method to update molecule charges.
 
-    optional arguments:
-        -h, --help            show this help message and exit
-        -p PROTEIN_FILENAME   Read the pdbid or receptor file(pdb).
-        -l LIGAND_FILENAME    Read the ligand file.
-        -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
-        -c                    {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger...}
-                              the charge model using in pybel format convert.
-        -o OUT_LIG_NAME       Define the output filename.
-        -f {mol2,pdb,None}    Output format: mol2(default), pdb, None(represents output mol2 and pdb file at the same time.)
-        -n TEMP_NAME          Define the directory name which store the temptorary file.
-        -u {0,1}              When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.
+       optional arguments:
+          -h, --help            show this help message and exit
+          -p PROTEIN_FILENAME   Read the pdbid or receptor file(pdb).
+          -l LIGAND_FILENAME    Read the ligand file.
+          -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
+          -c                    {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger...}
+                                the charge model using in pybel format convert.
+          -o OUT_LIG_NAME       Define the output filename.
+          -f {mol2,pdb,None}    Output format: mol2(default), pdb, None(represents output mol2 and pdb file at the same time.)
+          -n TEMP_NAME          Define the directory name which store the temptorary file.
+          -u {0,1}              When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.
 
 Testing
 -------
