@@ -1,5 +1,5 @@
-EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On EPB Model
-========================================================================================
+EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
+===============================================================================================================
 
 >***EPB - Effective Polarizable Bond***
 
