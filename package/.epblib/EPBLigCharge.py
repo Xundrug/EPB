@@ -1,11 +1,12 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# *********************************************
-# FileName     : EPBLigCharge.py
-# Created Time : 2019-12-09 11:46:40
-# Last Modified: 2019-12-09 16:46:49
-# *********************************************
+# Author : GuanFu Duan
+# Email : gfduan178@163.com
+# Supervisor : Changge Ji
+# All rights reserved 2019
+# Replaceing Liagnd atom Charges based on EPB (Effective Polarizable Bond) Model
+# Dependencies : opemmm, pdbfixer, openbabel, pybel
 
 
 from __future__ import division
@@ -52,10 +53,8 @@ if __name__ == '__main__':
     import sys, getpass, argparse
     scripts = 'Based on EPB(Effective Polarizable Bond) method to update molecule charges.'
     parser = argparse.ArgumentParser(description="\033[1;31mA tool:\033[0m \033[1;36m%s\033[0m" %scripts)
-    parser.add_argument('-p', action="store", nargs="*", dest="protein_filename",
-                              help="Read the pdbid or receptor file(pdb).")
-    parser.add_argument('-l', action="store", dest="ligand_filename",
-                              help="Read the ligand file.")
+    parser.add_argument('-p', action="store", dest="protein_filename", help="Read the pdbid or receptor file(pdb).")
+    parser.add_argument('-l', action="store", dest="ligand_filename", help="Read the ligand file.")
     parser.add_argument('-t', action="store", dest="temp_key", type=int, default=0, choices=[0, 1],
                               help="whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.")
     parser.add_argument('-c', action="store", dest="charge_model", default='gasteiger',
