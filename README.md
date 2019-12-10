@@ -115,6 +115,10 @@ Instructions
              the output: LigWithNewCharges.mol2, tmp_file (is a folder which store the temporary file)
              the middle temporary file will saved in tmp_file, the inforamtion of each temporary file write in tmp_file.dat,
              and you can use "-n" to define the temporary directory and the illustrate filename also change at the same time.
+             example:
+                                    EPBLigChrage.py -p 1g5s -t 1 -n 1g5s_temp
+                                    
+             the output: LigWithNewCharges.mol2, 1g5s_temp (is a folder which store the temporary file)
    
    2、If you have two file ----- one is protein file(format: pdb), and other is ligand file(format: pdb/mol2)
                                  both of them is the protein file(format: pdb)
@@ -137,7 +141,6 @@ Examples
                   LigWithNewCharges.mol2 (the ligand file which update the atom charges)
                   tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
                   the tmp_file/ligand_charge.dat record the polar atom and the charge changes as:
-                  
                   ;======================================================================================
                   ;                                                           CHARGE
                   ;  ATOM1   ATOM2  hybrid1  hybrid2         OLD-I      OLD-II      NEW-I       NEW-II
@@ -148,6 +151,9 @@ Examples
                       N17       H      N.3      H         -0.349900    0.125200   -0.403679    0.170825
                       N17       H      N.3      H         -0.349900    0.125200   -0.403679    0.170825
                   ;======================================================================================
+                       where column 1 and 2 represents the atom name, column 3 and 4 is the hybrid state in sybyl mol2 format,
+                  column 5 and 6 is the origin charge of two atoms from mol2 file (using pybel or read in the input mol2 file),
+                  column 7 and 8 is the updating charge os two atoms which under protein environments depend on EPB Model.
                   
                   
    2、use the local separate file contain receptor and ligand file
