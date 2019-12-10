@@ -9,8 +9,6 @@ EPB Charge: Updating Ligand Atom Charges under its Local Environments Based On E
 
     This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 
-    
-
     All rights reversed 2019
     
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/rcsb.png)
@@ -36,12 +34,14 @@ Installation
        
     3、Download and unzip EPB-master.zip
        After decompressing this package, please do the following:
-    
-                      cd package
-                      chmod +x INSTALL.py .epblib/EPBLigCharge.py
-                      ./INSTALL.py
-                      source ~/.bashrc
-
+       
+       Method I: chmod +x EPBLigCharge.py
+                 use "./EPBLigCharge.py -h/--help" for help
+       
+       Method II: cd package
+                  chmod +x INSTALL.py .epblib/EPBLigCharge.py
+                  ./INSTALL.py
+                  source ~/.bashrc
                   use "EPBLigCharge.py -h/--help" for help
        
 >***Sugguest using method II to install this procedure***
