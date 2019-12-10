@@ -107,7 +107,7 @@ Instructions
               run: EPBLigCharge.py -p 1g5s -k 1
               
               the output file is: LigWithNewCharges.mol2, 1g5s_I15_A_400.png
-                                  ![](https://raw.githubusercontent.com/Xundrug/EPB/master/example/1g5s_I17_A_400.png)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/example/1g5s_I17_A_400.png)
        
       * If you want to reserve the Intermediate file in order to understand the process, you can add -t 1 option, eg:
    
