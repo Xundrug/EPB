@@ -64,6 +64,7 @@ Important
           -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
           -c                    {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger...}
                                 the charge model using in pybel format convert.
+          -k {0,1}              Whether draw the ligand picture, 0)No(default), 1)Yes.
           -o OUT_LIG_NAME       Define the output filename.
           -f {mol2,pdb,None}    Output format: mol2(default), pdb, None(represents output mol2 and pdb file at the same time.)
           -n TEMP_NAME          Define the directory name which store the temptorary file.
@@ -136,6 +137,17 @@ Examples
                   LigWithNewCharges.mol2 (the ligand file which update the atom charges)
                   tmp_file (is a folder, and contain some temporary files, the information write in tmp_file.dat)
                   the tmp_file/ligand_charge.dat record the polar atom and the charge changes as:
+                  
+                  ;======================================================================================
+                  ;                                                           CHARGE
+                  ;  ATOM1   ATOM2  hybrid1  hybrid2         OLD-I      OLD-II      NEW-I       NEW-II
+                  ;--------------------------------------------------------------------------------------
+                  ************************************* molecule 1 *************************************
+                      N18       H    N.pl3      H         -0.317400    0.186800   -0.358604    0.228004
+                      N10       H    N.pl3      H         -0.296000    0.208500   -0.310092    0.222592
+                      N17       H      N.3      H         -0.349900    0.125200   -0.403679    0.170825
+                      N17       H      N.3      H         -0.349900    0.125200   -0.403679    0.170825
+                  ;======================================================================================
                   
                   
    2、use the local separate file contain receptor and ligand file
