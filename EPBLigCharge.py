@@ -57,7 +57,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="\033[1;31mA tool:\033[0m \033[1;36m%s\033[0m" %scripts)
     parser.add_argument('-p', action="store", dest="protein_filename", help="Read the pdbid or receptor file(pdb).")
     parser.add_argument('-l', action="store", dest="ligand_filename", help="Read the ligand file(pdb/mol2).")
-    parser.add_argument('-c', action="store", dest="charge_model", default='gasteiger',
+    parser.add_argument('-c', action="store", dest="charge_model", default='mmff94',
                               choices=['eem', 'eem2015ba', 'eem2015bm', 'eem2015bn', 'eem2015ha', 'eem2015hm',
                                        'eem2015hn', 'eqeq', 'fromfile', 'gasteiger', 'mmff94', 'none', 'qeq', 'qtpie'],
                               help="the charge model using in pybel format convert.")
