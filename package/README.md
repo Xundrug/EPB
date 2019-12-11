@@ -11,9 +11,9 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
     All rights reversed 2019
     
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/rcsb.png)
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/rcsb.jpg)
 
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openbabel.gif)
 
 
