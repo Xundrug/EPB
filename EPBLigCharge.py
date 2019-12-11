@@ -56,23 +56,23 @@ if __name__ == '__main__':
     scripts = 'calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.'
     parser = argparse.ArgumentParser(description="\033[1;31mA tool:\033[0m \033[1;36m%s\033[0m" %scripts)
     parser.add_argument('-p', action="store", dest="protein_filename", help="Read the pdbid or receptor file(pdb).")
-    parser.add_argument('-l', action="store", dest="ligand_filename", help="Read the ligand file.")
-    parser.add_argument('-t', action="store", dest="temp_key", type=int, default=0, choices=[0, 1],
-                              help="whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.")
+    parser.add_argument('-l', action="store", dest="ligand_filename", help="Read the ligand file(pdb/mol2).")
     parser.add_argument('-c', action="store", dest="charge_model", default='gasteiger',
                               choices=['eem', 'eem2015ba', 'eem2015bm', 'eem2015bn', 'eem2015ha', 'eem2015hm',
                                        'eem2015hn', 'eqeq', 'fromfile', 'gasteiger', 'mmff94', 'none', 'qeq', 'qtpie'],
                               help="the charge model using in pybel format convert.")
-    parser.add_argument('-k', action="store", dest="draw_lig", type=int, default=0, choices=[0, 1],
-                              help="Whether draw the ligand picture, 0)No(default), 1)Yes.")
+    parser.add_argument('-u', action="store", dest="use_mol2_charge", type=int, default=0, choices=[0, 1],
+                              help="When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.")
     parser.add_argument('-o', action="store", dest="out_lig_name", type=str, default="LigWithNewCharges",
-                              help="Define the output filename.")
+                              help="Define the output filename(deafult name: LigWithNewCharges).")
     parser.add_argument('-f', action="store", dest="out_format", type=str, default="mol2", choices=['mol2', 'pdb', 'None'],
                               help="Output format: mol2(default), pdb, None(represents output mol2 and pdb file at the same time.)")
     parser.add_argument('-n', action="store", dest="temp_name", type=str, default="tmp_file",
-                              help="Define the directory name which store the temptorary file.")
-    parser.add_argument('-u', action="store", dest="use_mol2_charge", type=int, default=0, choices=[0, 1],
-                              help="When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.")
+                              help="Define the temporary folder name (default: tmp_file) which store the temptorary file(default: tmp_file.dat).")
+    parser.add_argument('-t', action="store", dest="temp_key", type=int, default=0, choices=[0, 1],
+                              help="whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.")
+    parser.add_argument('-k', action="store", dest="draw_lig", type=int, default=0, choices=[0, 1],
+                              help="Whether draw the ligand picture, 0)No(default), 1)Yes.")
     options = parser.parse_args()
     if not options.protein_filename:
         parser.error('\033[1;31mneed more than 1 value to input(pdbid or receptor pdb file).\033[0m')
