@@ -10,11 +10,12 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
     This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 
     All rights reversed 2019
-    
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/rcsb.jpg)
 
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openbabel.gif)
+>***O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3 https://openbabel.org/*** 
+
+>***Eastman, P.; Swails, J.; Chodera, J. D.; McGibbon, R. T.; Zhao, Y. T.; Beauchamp, K. A.; Wang, L. P.; Simmonett, A. C.; Harrigan, M. P.; Stern, C. D.; Wiewiora, R. P.; Brooks, B. R.; Pande, V. S., OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Computational Biology 2017, 13 http://openmm.org/***
 
 
 Installation
