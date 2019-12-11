@@ -11,8 +11,8 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
     All rights reversed 2019
 
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openbabel.gif)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)
 >***1、[O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33)  
     2、[Eastman, P.; Swails, J.; Chodera, J. D.; McGibbon, R. T.; Zhao, Y. T.; Beauchamp, K. A.; Wang, L. P.; Simmonett, A. C.; Harrigan, M. P.; Stern, C. D.; Wiewiora, R. P.; Brooks, B. R.; Pande, V. S., OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Computational Biology 2017, 13](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable) 
     3、software available at：https://openbabel.org/ 、http://openmm.org/***
