@@ -50,25 +50,26 @@ Instructions
 ---------
 >***Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"***
 
-    usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME] 
-                                [-t {0,1}]
-                                [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger..}]
-                                [-k {0,1}] [-o OUT_LIG_NAME] [-f {mol2,pdb,None}]
-                                [-n TEMP_NAME] [-u {0,1}]
+    usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME]
+                       [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger,mmff94...}]
+                       [-u {0,1}] [-o OUT_LIG_NAME] [-f {mol2,pdb,None}]
+                       [-n TEMP_NAME] [-t {0,1}] [-k {0,1}]
+
     A tool: calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 
     optional arguments:
-          -h, --help            show this help message and exit
-          -p PROTEIN_FILENAME   Read the pdbid or receptor file(pdb).
-          -l LIGAND_FILENAME    Read the ligand file.
-          -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
-          -c                    {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger...}
-                                the charge model using in pybel format convert.
-          -k {0,1}              Whether draw the ligand picture, 0)No(default), 1)Yes.
-          -o OUT_LIG_NAME       Define the output filename.
-          -f {mol2,pdb,None}    Output format: mol2(default), pdb, None(represents output mol2 and pdb file at the same time.)
-          -n TEMP_NAME          Define the directory name which store the temptorary file.
-          -u {0,1}              When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.
+        -h, --help            show this help message and exit
+        -p PROTEIN_FILENAME   Read the pdbid or receptor file(pdb).
+        -l LIGAND_FILENAME    Read the ligand file(pdb/mol2).
+        -c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger,mmff94,none,qeq,qtpie}
+                              the charge model using in pybel format convert (default: mmff94).
+        -u {0,1}              When input is a mol2 file for ligand, use the current charge, 0)No(default), 1)Yes.
+        -o OUT_LIG_NAME       Define the output filename(deafult name: LigWithNewCharges).
+        -f {mol2,pdb,None}    Output format: mol2(default), pdb, None(represents output mol2 and pdb file at the same time.)
+        -n TEMP_NAME          Define the temporary folder name (default: tmp_file) which store the temptorary file(default:
+                              tmp_file.dat).
+        -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
+        -k {0,1}              Whether draw the ligand picture, 0)No(default), 1)Yes.
 
 Examples
 --------
