@@ -2,7 +2,6 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 ===============================================================================================================
 
 >***EPB - Effective Polarizable Bond***
----------------------------------------
 
     Author: GuanFu Duan, gfduan178@163.com
 
@@ -47,6 +46,7 @@ Installation
                   use "EPBLigCharge.py -h/--help" for help
        
 >***Sugguest using method II to install this procedure***
+`Sugguest using method II to install this procedure`
 
 Instructions
 ---------
