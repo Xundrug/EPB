@@ -98,6 +98,15 @@ Instructions
 
 Examples
 --------
+**1. Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**
+    This script calculates target, pathway and disease hits per compound and represents them in a matrix. The DisGeNET threshold and organism are optional. Organism must be as specified in the classes_in_model.txt and enclosed by quotes ("")
+
+    Example of how to run the code:
+
+    ```
+    python predict_per_comp.py input.csv 30 0.5 0.3 "Homo sapiens (Human)"
+    ```
+
 
 **1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**  
 
