@@ -25,8 +25,9 @@ Installation
 ------------
 ***Follow these steps on Linux/OSX:***
 
-**1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**
-    ```Example```: If your system is ubuntu/Linux with 64-bit, please download the file [Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))  
+**1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**  
+
+>```Example```: If your system is ubuntu/Linux with 64-bit, please download the file [Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))  
 
 >```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
 
@@ -99,9 +100,12 @@ Examples
 --------
 
 **1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**
-   
+      Example of how to run the code:
+      
+      ```
       run: EPBLigCharge.py -p 1g5s -t 1
-                                    
+      ```
+      
       the output: 1g5s.pdb (download or use local file)
                   LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
