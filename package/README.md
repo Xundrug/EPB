@@ -1,14 +1,7 @@
 EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 ================================================================================================================
 
-
-```
-@Override
-protected void onDestroy() {
-    EventBus.getDefault().unregister(this);
-    super.onDestroy();
-}
-``` 
+$\color{red}{红色字}$
 
 ***EPB - Effective Polarizable Bond***
 
