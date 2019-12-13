@@ -39,7 +39,7 @@ Installation
     
 >**```conda install -c openbabel openbabel```**  
        
->**```pip install pybel```**  
+>```**pip install pybel**```  
   
 **or install this module from local using ```"conda install --use-local Module/*.tar.bz2"```**
   
