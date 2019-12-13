@@ -1,7 +1,8 @@
 EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
-===============================================================================================================
+================================================================================================================
 
->***EPB - Effective Polarizable Bond***
+
+***EPB - Effective Polarizable Bond***
 
     Author: GuanFu Duan, gfduan178@163.com
 
@@ -11,44 +12,53 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
     All rights reversed 2019
 
->***[O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33)  
+***[O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33)  
     [Eastman, P.; Swails, J.; Chodera, J. D.; McGibbon, R. T.; Zhao, Y. T.; Beauchamp, K. A.; Wang, L. P.; Simmonett, A. C.; Harrigan, M. P.; Stern, C. D.; Wiewiora, R. P.; Brooks, B. R.; Pande, V. S., OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Computational Biology 2017, 13](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable)***
-    
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openbabel.gif)
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)
-    
->***Open Babel and OpenMM available at：https://openbabel.org/ 、http://openmm.org/***
 
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openbabel.gif)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)      
+***Open Babel and OpenMM available at：https://openbabel.org/ 、http://openmm.org/***
+
+----------------------------------------------------------------------------------------
 
 Installation
 ------------
->***Follow these steps on Linux/OSX:***
+***Follow these steps on Linux/OSX:***
 
-    1、Download and install Python (from https://conda.io/miniconda.html, Version > 2.7)
-       (Example: If your system is ubuntu/Linux with 64-bit, please download the file Miniconda3-latest-Linux-x86_64.sh.)
-       after download: chmod +x Miniconda3-latest-Linux-x86_64.sh
-                       ./Miniconda3-latest-Linux-x86_64.sh
-              
-    2、Open terminal in Mac/Linux, install openmm, pdbfixer, openbabel, pybel and run
-       conda install -c omnia openmm pdbfixer
-       conda install -c openbabel openbabel
-       pip install pybel
+**1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**  
+
+>```Example```: If your system is ubuntu/Linux with 64-bit, please download the file [Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))  
+
+>```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
+
+>>>>>**```./Miniconda3-latest-Linux-x86_64.sh```**   
+  
+**2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
+
+>**```conda install -c omnia openmm pdbfixer```**  
+
+>**```conda install -c openbabel openbabel```**  
+
+>**```pip install pybel```**  
+  
+>or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
+  
+**3、Download and unzip ```EPB-master.zip```**  
+
+>After decompressing this package, please do the following:
+
+>**```cd package```**   
+
+>>>**```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
+
+>>>**```./INSTALL.py```**  
+
+>>>**```source ~/.bashrc```**  
+
+>>>**use "```EPBLigCharge.py -h/--help```" for help**
        
-       or install this module from local using "conda install --use-local Module/*.tar.bz2"
-       
-    3、Download and unzip EPB-master.zip
-       After decompressing this package, please do the following:
-       
-       Method I: chmod +x EPBLigCharge.py
-                 use "./EPBLigCharge.py -h/--help" for help
-       
-       Method II: cd package
-                  chmod +x INSTALL.py .epblib/EPBLigCharge.py
-                  ./INSTALL.py
-                  source ~/.bashrc
-                  use "EPBLigCharge.py -h/--help" for help
-       
->***Sugguest using method II to install this procedure***
+
+------------------------------------------------------
 
 Instructions
 ---------
@@ -75,20 +85,25 @@ Instructions
         -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
         -k {0,1}              Whether draw the ligand picture, 0)No(default), 1)Yes.
 
+-----------------------------------------------------------------------------------------------------------------------------
+
 Examples
 --------
-  >**1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**
-   
-      run: EPBLigCharge.py -p 1g5s -t 1
-                                    
-      the output: 1g5s.pdb (download or use local file)
+
+**1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**  
+       
+       run: EPBLigCharge.py -p 1g5s -t 1
+
+       the output: 1g5s.pdb (download or use local file)
                   LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
                   
-  >**2. Calculate polarized ligand charge from a ligand file and a receptor file**
+**2、Calculate polarized ligand charge from a ligand file and a receptor file**
    
        run: EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
             EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1
        
        the output: LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                    tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
+
+-----------------------------------------------------------------------------------------------------------------------------
