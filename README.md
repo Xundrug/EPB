@@ -12,7 +12,7 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
     All rights reversed 2019
 
->***[O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33)  
+***[O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33)  
     [Eastman, P.; Swails, J.; Chodera, J. D.; McGibbon, R. T.; Zhao, Y. T.; Beauchamp, K. A.; Wang, L. P.; Simmonett, A. C.; Harrigan, M. P.; Stern, C. D.; Wiewiora, R. P.; Brooks, B. R.; Pande, V. S., OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Computational Biology 2017, 13](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable)***
 
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openbabel.gif)
@@ -98,25 +98,12 @@ Instructions
 
 Examples
 --------
-**1. Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**
-    This script calculates target, pathway and disease hits per compound and represents them in a matrix. The DisGeNET threshold and organism are optional. Organism must be as specified in the classes_in_model.txt and enclosed by quotes ("")
-
-    Example of how to run the code:
-
-    ```
-    python predict_per_comp.py input.csv 30 0.5 0.3 "Homo sapiens (Human)"
-    ```
-
 
 **1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**  
+       
+       run: EPBLigCharge.py -p 1g5s -t 1
 
-    Example of how to run the code:
-
-    ```
-    EPBLigCharge.py -p 1g5s -t 1
-    ```
-
->the output: 1g5s.pdb (download or use local file)
+       the output: 1g5s.pdb (download or use local file)
                   LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
                   
