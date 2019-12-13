@@ -65,7 +65,7 @@ Installation
 
 >>>>**use "```EPBLigCharge.py -h/--help```" for help**
        
-**Sugguest using method II to install this procedure**
+***Sugguest using method II to install this procedure***
 
 ------------------------------------------------------
 
@@ -94,6 +94,8 @@ Instructions
         -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
         -k {0,1}              Whether draw the ligand picture, 0)No(default), 1)Yes.
 
+-----------------------------------------------------------------------------------------------------------------------------
+
 Examples
 --------
 
@@ -112,3 +114,5 @@ Examples
        
        the output: LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                    tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
+
+-----------------------------------------------------------------------------------------------------------------------------
