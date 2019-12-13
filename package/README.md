@@ -47,8 +47,6 @@ Installation
 
 >After decompressing this package, please do the following:
 
->**```cd package```**   
-
 >>>**```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
 
 >>>**```./INSTALL.py```**  
