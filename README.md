@@ -1,7 +1,6 @@
 EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 ================================================================================================================
 
-
 ***EPB - Effective Polarizable Bond***
 
     Author: GuanFu Duan, gfduan178@163.com
@@ -23,25 +22,38 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
 Installation
 ------------
-***Follow these steps on Linux/OSX:***
+***Follow these steps on Linux/OSX:***  
 
-**1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**  
 
->```Example```: If your system is ubuntu/Linux with 64-bit, please download the file [Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```Example```: If your system is ubuntu/Linux with 64-bit, please download the file [Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))  
 
->```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
 
->>>>>**```./Miniconda3-latest-Linux-x86_64.sh```**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```./Miniconda3-latest-Linux-x86_64.sh```**   
   
-**2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
->**```conda install -c omnia openmm pdbfixer```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```conda install -c omnia openmm pdbfixer```**  
 
->**```conda install -c openbabel openbabel```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```conda install -c openbabel openbabel```**  
 
->**```pip install pybel```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```pip install pybel```**  
   
->or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Download and unzip ```EPB-master.zip```**  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After decompressing this package, please do the following:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```./INSTALL.py```**  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```source ~/.bashrc```**  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; use "**```EPBLigCharge.py -h/--help```**" for help
+
   
 **3、Download and unzip ```EPB-master.zip```**  
 
