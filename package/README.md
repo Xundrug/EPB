@@ -59,7 +59,7 @@ Installation
 
 Instructions
 ---------
-***Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"***
+***Open the terminal in Mac/Linux and run "```EPBLigCharge.py -h/--help```"***
 
     usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME]
                        [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger,mmff94...}]
@@ -93,11 +93,11 @@ Examples
        
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```EPBLigCharge.py -p 1g5s -t 1  ```**  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The output: 1g5s.pdb (download or use local file)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The output: **1g5s.pdb** (download or use local file)  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)  
                   
 **2、Calculate polarized ligand charge from a ligand file and a receptor file**
 
@@ -107,10 +107,8 @@ Examples
             
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1```**
        
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The output: 1g5s.pdb (download or use local file)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The output: **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
 
 -----------------------------------------------------------------------------------------------------------------------------
