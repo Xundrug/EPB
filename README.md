@@ -1,7 +1,8 @@
-# EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
+EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
+================================================================================================================
 
 
-### *EPB - Effective Polarizable Bond*
+***EPB - Effective Polarizable Bond***
 
     Author: GuanFu Duan, gfduan178@163.com
 
@@ -14,17 +15,17 @@
 ***[O'Boyle, N. M.; Banck, M.; James, C. A.; Morley, C.; Vandermeersch, T.; Hutchison, G. R., Open Babel: An open chemical toolbox. Journal of Cheminformatics 2011, 3](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33)  
     [Eastman, P.; Swails, J.; Chodera, J. D.; McGibbon, R. T.; Zhao, Y. T.; Beauchamp, K. A.; Wang, L. P.; Simmonett, A. C.; Harrigan, M. P.; Stern, C. D.; Wiewiora, R. P.; Brooks, B. R.; Pande, V. S., OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Computational Biology 2017, 13](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable)***
 
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openbabel.gif)
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)      
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openbabel.gif)
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/package/epblib/openmm.png)      
 ***Open Babel and OpenMM available at：https://openbabel.org/ 、http://openmm.org/***
 
 ----------------------------------------------------------------------------------------
 
-# Installation
+Installation
+------------
+***Follow these steps on Linux/OSX:***
 
-### Follow these steps on Linux/OSX:
-
-#### 1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)  
+**1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**    
 
 >```Example```: If your system is ubuntu/Linux with 64-bit, please download the file [Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))  
 
@@ -68,7 +69,8 @@
 
 ------------------------------------------------------
 
-## Instructions
+Instructions
+------------
 
 ***Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"***
 
