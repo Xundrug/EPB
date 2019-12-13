@@ -41,7 +41,7 @@ Installation
 
 >**```pip install pybel```**  
   
-**or install this module from local using ```"conda install --use-local Module/*.tar.bz2"```**
+>or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
   
 **3、Download and unzip ```EPB-master.zip```**  
 
@@ -65,7 +65,7 @@ Installation
 
 >>>>**use "```EPBLigCharge.py -h/--help```" for help**
        
->***Sugguest using method II to install this procedure***
+>**Sugguest using method II to install this procedure**
 
 Instructions
 ---------
