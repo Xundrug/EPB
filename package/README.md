@@ -22,7 +22,7 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
 Installation
 ------------
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***Follow these steps on Linux/OSX:***  
+***Follow these steps on Linux/OSX:***  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **1. Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**  
 
@@ -42,17 +42,17 @@ Installation
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
   
-**3、Download and unzip ```EPB-master.zip```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Download and unzip ```EPB-master.zip```**  
 
->After decompressing this package, please do the following:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After decompressing this package, please do the following:
 
->>>**```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
 
->>>**```./INSTALL.py```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```./INSTALL.py```**  
 
->>>**```source ~/.bashrc```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```source ~/.bashrc```**  
 
->>>**use "```EPBLigCharge.py -h/--help```" for help**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **use "```EPBLigCharge.py -h/--help```" for help**
        
 
 ------------------------------------------------------
