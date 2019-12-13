@@ -65,7 +65,7 @@ Installation
 
 >>>>**use "```EPBLigCharge.py -h/--help```" for help**
        
->**Sugguest using method II to install this procedure**
+**Sugguest using method II to install this procedure**
 
 ------------------------------------------------------
 
