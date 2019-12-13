@@ -43,17 +43,26 @@ Installation
 **or install this module from local using ```"conda install --use-local Module/*.tar.bz2"```**
   
 **3、Download and unzip ```EPB-master.zip```**  
-  
+
 After decompressing this package, please do the following:
        
-** Install Method I: ```chmod +x EPBLigCharge.py```**
-                     ```use "./EPBLigCharge.py -h/--help" for help```
+***Install Method I:*** 
+
+**```chmod +x EPBLigCharge.py```**  
+
+**```use "./EPBLigCharge.py -h/--help" for help```**
        
-       Method II: cd package
-                  chmod +x INSTALL.py .epblib/EPBLigCharge.py
-                  ./INSTALL.py
-                  source ~/.bashrc
-                  use "EPBLigCharge.py -h/--help" for help
+***Install Method II:*** 
+
+**```cd package```**   
+
+**```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
+
+**```./INSTALL.py```**  
+
+**```source ~/.bashrc```**  
+
+**use "```EPBLigCharge.py -h/--help```" for help**
        
 >***Sugguest using method II to install this procedure***
 
