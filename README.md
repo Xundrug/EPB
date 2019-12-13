@@ -35,11 +35,9 @@ Installation
   
 **2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
->**```conda install -c omnia openmm pdbfixer```**
-    
->**```conda install -c openbabel openbabel```**  
-       
->```**pip install pybel**```  
+>**```conda install -c omnia openmm pdbfixer  
+>conda install -c openbabel openbabel  
+>pip install pybel```**  
   
 **or install this module from local using ```"conda install --use-local Module/*.tar.bz2"```**
   
