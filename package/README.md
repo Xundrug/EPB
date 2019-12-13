@@ -1,8 +1,8 @@
 EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 ================================================================================================================
 
-$\color{red}{红色字}$
-<table><tr><td bgcolor=#7FFFD4>
+
+&nbsp; njkfnkbng
 
 ***EPB - Effective Polarizable Bond***
 
