@@ -1,5 +1,4 @@
-EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
-================================================================================================================
+# EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 
 
 ***EPB - Effective Polarizable Bond***
@@ -69,8 +68,8 @@ Installation
 
 ------------------------------------------------------
 
-Instructions
----------
+## Instructions
+
 ***Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"***
 
     usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME]
