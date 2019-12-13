@@ -17,7 +17,7 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openbabel.gif)
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)      
->***Open Babel and OpenMM available at：https://openbabel.org/ 、http://openmm.org/***
+***Open Babel and OpenMM available at：https://openbabel.org/ 、http://openmm.org/***
 
 ----------------------------------------------------------------------------------------
 
