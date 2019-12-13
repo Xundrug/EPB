@@ -62,7 +62,7 @@ Installation
 
 Instructions
 ---------
->***Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"***
+***Open the terminal in Mac/Linux and run "EPBLigCharge.py -h/--help"***
 
     usage: EPBLigCharge.py [-h] [-p PROTEIN_FILENAME] [-l LIGAND_FILENAME]
                        [-c {eem,eem2015ba,eem2015bm,eem2015bn,eem2015ha,eem2015hm,eem2015hn,eqeq,fromfile,gasteiger,mmff94...}]
