@@ -101,10 +101,12 @@ Examples
 
 **1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**  
 
->Example of how to run the code:  
-	**```
-	EPBLigCharge.py -p 1g5s -t 1
-	```**  
+    Example of how to run the code:
+
+    ```
+    EPBLigCharge.py -p 1g5s -t 1
+    ```
+
 >the output: 1g5s.pdb (download or use local file)
                   LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
@@ -118,13 +120,4 @@ Examples
                    tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
 
 -----------------------------------------------------------------------------------------------------------------------------
-
-5. ```predict_per_comp.py filename_1.csv N_cores tpr_threshold DisGeNET_threshold organism```
-    This script calculates target, pathway and disease hits per compound and represents them in a matrix. The DisGeNET threshold and organism are optional. Organism must be as specified in the classes_in_model.txt and enclosed by quotes ("")
-
-    Example of how to run the code:
-
-    ```
-    python predict_per_comp.py input.csv 30 0.5 0.3 "Homo sapiens (Human)"
-    ```
 
