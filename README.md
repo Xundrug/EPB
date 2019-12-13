@@ -31,8 +31,8 @@ Installation
 ```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
 
 **```./Miniconda3-latest-Linux-x86_64.sh```**   
-
-
+  
+  
 **2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
 **```conda install -c omnia openmm pdbfixer```**
@@ -40,12 +40,13 @@ Installation
 **```conda install -c openbabel openbabel```**  
        
 **```pip install pybel```**  
-       
+  
 **or install this module from local using ```"conda install --use-local Module/*.tar.bz2"```**
-
-       
+  
+  
 **3、Download and unzip ```EPB-master.zip```**  
->***After decompressing this package, please do the following:***
+  
+***After decompressing this package, please do the following:***
        
        Method I: chmod +x EPBLigCharge.py
                  use "./EPBLigCharge.py -h/--help" for help
