@@ -100,12 +100,12 @@ Examples
 --------
 
 **1、Calculate polarized ligand charge from a complex structure. (https://www.rcsb.org/)**  
-	Example of how to run the code:
+
+>Example of how to run the code:  
 	**```
 	EPBLigCharge.py -p 1g5s -t 1
-	```**
-      
-      the output: 1g5s.pdb (download or use local file)
+	```**  
+>the output: 1g5s.pdb (download or use local file)
                   LigWithNewCharges.mol2 (the ligand file with polarized charge calculated by EPB)
                   tmp_file (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
                   
