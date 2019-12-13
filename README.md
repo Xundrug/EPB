@@ -15,8 +15,7 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
     [Eastman, P.; Swails, J.; Chodera, J. D.; McGibbon, R. T.; Zhao, Y. T.; Beauchamp, K. A.; Wang, L. P.; Simmonett, A. C.; Harrigan, M. P.; Stern, C. D.; Wiewiora, R. P.; Brooks, B. R.; Pande, V. S., OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Computational Biology 2017, 13](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable)***
 
 ![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openbabel.gif)
-![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)
-    
+![](https://raw.githubusercontent.com/Xundrug/EPB/master/bin/openmm.png)      
 >***Open Babel and OpenMM available at：https://openbabel.org/ 、http://openmm.org/***
 
 ----------------------------------------------------------------------------------------
