@@ -45,25 +45,25 @@ Installation
   
 **3、Download and unzip ```EPB-master.zip```**  
 
-After decompressing this package, please do the following:
+>After decompressing this package, please do the following:
        
-***Install Method I:*** 
+>***Install Method I:*** 
 
-**```chmod +x EPBLigCharge.py```**  
+>>**```chmod +x EPBLigCharge.py```**  
 
-**```use "./EPBLigCharge.py -h/--help" for help```**
+>>**```use "./EPBLigCharge.py -h/--help" for help```**
        
-***Install Method II:*** 
+>***Install Method II:*** 
 
-**```cd package```**   
+>>**```cd package```**   
 
-**```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
+>>>>**```chmod +x INSTALL.py .epblib/EPBLigCharge.py```**    
 
-**```./INSTALL.py```**  
+>>>>**```./INSTALL.py```**  
 
-**```source ~/.bashrc```**  
+>>>>**```source ~/.bashrc```**  
 
-**use "```EPBLigCharge.py -h/--help```" for help**
+>>>>**use "```EPBLigCharge.py -h/--help```" for help**
        
 >***Sugguest using method II to install this procedure***
 
