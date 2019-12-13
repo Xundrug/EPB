@@ -31,15 +31,15 @@ Installation
 
 >```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
 
->>>**```./Miniconda3-latest-Linux-x86_64.sh```**   
+>>>>**```./Miniconda3-latest-Linux-x86_64.sh```**   
   
 **2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
-**```conda install -c omnia openmm pdbfixer```**
+>**```conda install -c omnia openmm pdbfixer```**
     
-**```conda install -c openbabel openbabel```**  
+>**```conda install -c openbabel openbabel```**  
        
-**```pip install pybel```**  
+>**```pip install pybel```**  
   
 **or install this module from local using ```"conda install --use-local Module/*.tar.bz2"```**
   
