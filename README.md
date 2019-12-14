@@ -34,7 +34,8 @@ Installation
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program EPB-master installation**  
 
-   Open terminal in Mac/Linux, and run  
+   ** Dependency package installation
+      Open terminal in Mac/Linux, and run  
    
    **```conda install -c omnia openmm pdbfixer```**  
 
