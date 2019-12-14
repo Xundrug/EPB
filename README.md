@@ -11,8 +11,9 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 
     All rights reversed 2019
 
-![](./bin/openbabel.gif)
-![](./bin/openmm.png)
+<div align="center">
+    <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2F1758-2946-3-33/MediaObjects/13321_2011_Article_216_Figa_HTML.gif?as=webp" width="500" \><img src="https://avatars1.githubusercontent.com/u/52428936?s=400&v=4" width="250" \>
+</div>  
 
 * ***Reference of [openbabel](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33) and [openmm](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable)***  
 
@@ -24,7 +25,7 @@ Installation
 ------------
 ***Follow these steps on Linux/OSX:***  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **1、Download and install ```Python``` (from https://conda.io/miniconda.html, Version > 2.7)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **1、Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```Example```: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)**  
 
@@ -42,11 +43,11 @@ Installation
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Download and unzip ```EPB-master.zip```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Program installation**  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After decompressing **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)**, please do the following:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download the Program **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and **install it in ```two ways```**:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***```1) Install Method I:```***
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***```1) Way I:```***
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```cd EPB-master```**
 
@@ -54,7 +55,7 @@ Installation
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; use "**```./EPBLigCharge.py -h/--help```**" for help  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***```2) Install Method II:```***  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***```2) Way II:```***  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```cd EPB-master/Method2```**  
 
