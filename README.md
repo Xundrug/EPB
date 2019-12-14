@@ -40,17 +40,21 @@ Installation
     
         * installation from internet file
         
-            **```conda install -c omnia openmm pdbfixer```**
+                conda install -c omnia openmm pdbfixer
             
-            **```conda install -c openbabel openbabel```**
+                conda install -c openbabel openbabel
             
-            **```pip install pybel```**
+                pip install pybel
         
         * installation from local file
         
-            **way I: ```conda install --use-local ./EPB-master/Module/*.tar.bz2```**
+            * ```way I```: 
             
-            **way II: ```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```**
+                    conda install --use-local ./EPB-master/Module/*.tar.bz2
+            
+            * ```way II```: 
+                
+                    conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
     * Install Program EPB-master in two ways:
     
