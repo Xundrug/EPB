@@ -60,7 +60,7 @@ Installation
             
                         source ~/.bashrc    
             
-            * using "**EPBLigCharge.py -h/--help**" for help
+         * using "**EPBLigCharge.py -h/--help**" for help
 
 ------------------------------------------------------
 
