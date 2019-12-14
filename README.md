@@ -54,23 +54,23 @@ Installation
 
     * Install Program EPB-master in two ways:
     
-        * way I:
+        * ```way I```:
         
-            **```cd EPB-master```**
+                cd EPB-master
             
-                chmod +x EPBLigCharge.py
+                    chmod +x EPBLigCharge.py
                 
             using "**```./EPBLigCharge.py -h/--help```**" for help
            
-        * way II:
+        * ```way II```:
         
-            **```cd EPB-master/Method2```**
+                cd EPB-master/Method2
             
-                chmod +x INSTALL.py ./bin/EPBLigCharge.py  
+                    chmod +x INSTALL.py ./bin/EPBLigCharge.py  
             
-                ./INSTALL.py  
+                    ./INSTALL.py  
             
-                source ~/.bashrc    
+                    source ~/.bashrc    
             
             using "**```EPBLigCharge.py -h/--help```**" for help 
        
