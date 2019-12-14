@@ -39,7 +39,7 @@ Installation
     
     * **```Install dependency package```** 
     
-        * installation from internet file
+        Method I: installation from internet file
         
                 conda install -c omnia openmm pdbfixer
             
@@ -47,7 +47,7 @@ Installation
             
                 pip install pybel
         
-        * installation from local file
+        Method II: installation from local file
         
             * ***way I***: 
             
