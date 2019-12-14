@@ -63,7 +63,7 @@ Installation
             
                     chmod +x EPBLigCharge.py
                 
-        using "**```./EPBLigCharge.py -h/--help```**" for help
+            using "**```./EPBLigCharge.py -h/--help```**" for help
         
         
         Method II:
