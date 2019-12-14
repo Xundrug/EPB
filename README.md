@@ -37,7 +37,7 @@ Installation
     
     Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it  
     
-    * **```Install dependency package```** 
+    * **```Install dependency package by two methods```** 
     
         Method I: installation from internet file
         
@@ -47,15 +47,13 @@ Installation
             
                 pip install pybel
         
-        Method II: installation from local file
-        
-            * ***way I***: 
+        Method II: installation from local file 
             
-                    conda install --use-local ./EPB-master/Module/*.tar.bz2
-            
-            * ***way II***: 
+                conda install --use-local ./EPB-master/Module/*.tar.bz2 
                 
-                    conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
+                or
+                
+                conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
     * **```Install Program EPB-master in two ways```**:
     
