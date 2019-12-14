@@ -43,6 +43,8 @@ Installation
         * ```conda install -c openbabel openbabel```
         
         * ```pip install pybel```
+        
+        * using ```conda install --use-local ./EPB-master/Module/*.tar.bz2``` or ```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```
 
 * **Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
