@@ -48,11 +48,11 @@ Installation
         
         * Method II: installation from local file 
         
-            * from ./EPB-master/Module
+            & from EPB-master/Module
             
                     conda install --use-local ./EPB-master/Module/*.tar.bz2 
                 
-            * from ./EPB-master/Method2/Module
+            & from EPB-master/Method2/Module
                 
                     conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
