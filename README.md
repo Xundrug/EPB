@@ -48,9 +48,9 @@ Installation
         
         * installation from local file
         
-            **```conda install --use-local ./EPB-master/Module/*.tar.bz2```**
-            or 
-            **```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```**
+            **way I: ```conda install --use-local ./EPB-master/Module/*.tar.bz2```**
+            
+            **way II: ```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```**
 
 * **Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
