@@ -33,8 +33,7 @@ Installation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```./Miniconda3-latest-Linux-x86_64.sh```**   
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program EPB-master installation**  
-
-   ** Dependency package installation
+&nbsp;&nbsp;&nbsp;&nbsp; ** Dependency package installation
       Open terminal in Mac/Linux, and run  
    
    **```conda install -c omnia openmm pdbfixer```**  
