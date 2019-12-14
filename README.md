@@ -36,15 +36,15 @@ Installation
     
     Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it  
     
-    * **Install dependency package** 
+    * Install dependency package 
     
         * Install from internet file
         
-            conda install -c omnia openmm pdbfixer
+            **```conda install -c omnia openmm pdbfixer```**
             
-            conda install -c openbabel openbabel
+            **```conda install -c openbabel openbabel```**
             
-            pip install pybel
+            **```pip install pybel```**
         
         * using ```conda install --use-local ./EPB-master/Module/*.tar.bz2``` or ```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```
 
