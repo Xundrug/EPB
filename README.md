@@ -74,7 +74,7 @@ Installation
             
             using "**```EPBLigCharge.py -h/--help```**" for help 
        
-    ***Sugguest using method II to install this procedure***
+***Sugguest install Program ```EPB-master``` by way II***
 
 ------------------------------------------------------
 
