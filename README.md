@@ -52,17 +52,16 @@ Installation
             
             **way II: ```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```**
 
-* **Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```conda install -c omnia openmm pdbfixer```**  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```conda install -c openbabel openbabel```**  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```pip install pybel```**  
-  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download the Program **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and **install it in ```two ways```**:
+    * Install Program EPB-master in two ways:
+    
+        * way I:
+        
+            **```cd EPB-master```**
+            
+                **```chmod +x EPBLigCharge.py```**
+                
+                use "**```./EPBLigCharge.py -h/--help```**" for help
+    
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***```1) Way I:```***
 
