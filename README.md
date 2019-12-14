@@ -40,11 +40,11 @@ Installation
     
         * ```Install from internet file``` 
         
-            * ```conda install -c omnia openmm pdbfixer```
+            ** ```conda install -c omnia openmm pdbfixer```
             
-            * ```conda install -c openbabel openbabel```
+            ** ```conda install -c openbabel openbabel```
             
-            * ```pip install pybel```
+            ** ```pip install pybel```
         
         * using ```conda install --use-local ./EPB-master/Module/*.tar.bz2``` or ```conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2```
 
