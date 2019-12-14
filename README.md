@@ -26,17 +26,18 @@ Installation
 ***Follow these steps on Linux/OSX:***  
 * **Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
 
-    Example: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)** and then run
+    * Example: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)** 
+    * then run
+        
+            chmod +x Miniconda3-latest-Linux-x86_64.sh
     
-    * **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**  
-    
-    * **```./Miniconda3-latest-Linux-x86_64.sh```**  
+            ./Miniconda3-latest-Linux-x86_64.sh
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program ```EPB-master``` installation**  
     
     Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it  
     
-    * Install dependency package 
+    * **```Install dependency package```** 
     
         * installation from internet file
         
@@ -48,17 +49,17 @@ Installation
         
         * installation from local file
         
-            * ```way I```: 
+            * ***way I***: 
             
                     conda install --use-local ./EPB-master/Module/*.tar.bz2
             
-            * ```way II```: 
+            * ***way II***: 
                 
                     conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
-    * Install Program EPB-master in two ways:
+    * **```Install Program EPB-master in two ways```**:
     
-        * ```way I```:
+        * way I:
         
                 cd EPB-master
             
@@ -66,7 +67,7 @@ Installation
                 
             using "**```./EPBLigCharge.py -h/--help```**" for help
            
-        * ```way II```:
+        * way II:
         
                 cd EPB-master/Method2
             
