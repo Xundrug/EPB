@@ -33,6 +33,8 @@ Installation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```./Miniconda3-latest-Linux-x86_64.sh```**   
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program EPB-master installation**  
+    
+    Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it
 &nbsp;&nbsp;&nbsp;&nbsp; ** Dependency package installation
       Open terminal in Mac/Linux, and run  
    
