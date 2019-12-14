@@ -55,17 +55,18 @@ Installation
                 
                 conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
-    * **```Install Program EPB-master in two ways```**:
+    * **```Install Program EPB-master in two methods```**:
     
-        * way I:
+        Method I:
         
                 cd EPB-master
             
                     chmod +x EPBLigCharge.py
                 
-            using "**```./EPBLigCharge.py -h/--help```**" for help
-           
-        * way II:
+        using "**```./EPBLigCharge.py -h/--help```**" for help
+        
+        
+        Method II:
         
                 cd EPB-master/Method2
             
@@ -75,7 +76,7 @@ Installation
             
                     source ~/.bashrc    
             
-            using "**```EPBLigCharge.py -h/--help```**" for help 
+        using "**```EPBLigCharge.py -h/--help```**" for help 
        
 ***Sugguest install Program ```EPB-master``` by way II***
 
