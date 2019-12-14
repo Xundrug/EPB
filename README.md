@@ -24,6 +24,7 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 Installation
 ------------
 ***Follow these steps on Linux/OSX:***  
+* **1、Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **1、Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
 
