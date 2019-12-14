@@ -38,7 +38,7 @@ Installation
     
     * **```Install dependency package by two methods```** 
     
-        * Method I: installation from internet file
+        * Method I: installation from internet package
         
                     conda install -c omnia openmm pdbfixer
             
@@ -46,13 +46,13 @@ Installation
             
                     pip install pybel
         
-        * Method II: installation from local file 
+        * Method II: installation from local package 
         
-            & from EPB-master/Module
+            package located in the EPB-master/Module
             
                     conda install --use-local ./EPB-master/Module/*.tar.bz2 
                 
-            & from EPB-master/Method2/Module
+            package located in the EPB-master/Method2/Module
                 
                     conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
