@@ -36,7 +36,7 @@ Installation
     
     Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it  
     
-   * **Dependency package installation**  
+  * **Dependency package installation**  
       Open terminal in Mac/Linux, and run  
    
    **```conda install -c omnia openmm pdbfixer```**  
