@@ -38,7 +38,11 @@ Installation
     
     * **Install ```dependency package```** 
     
-        * ```conda install -c omnia openmm pdbfixer```  
+        * ```conda install -c omnia openmm pdbfixer``` 
+        
+        * ```conda install -c openbabel openbabel```
+        
+        * ```pip install pybel```
 
 * **Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
