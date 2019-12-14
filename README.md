@@ -112,9 +112,9 @@ Instructions
 Examples
 --------
 
-**1、Calculate polarized ligand charge from a complex structure (https://www.rcsb.org/)**  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example of how to run the code:
+* **Calculate polarized ligand charge from a complex structure (https://www.rcsb.org/)**
+    
+    * Example of how to run the code:
        
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```EPBLigCharge.py -p 1g5s -t 1  ```**  
 
