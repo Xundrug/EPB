@@ -137,7 +137,9 @@ Examples
             EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1
        
     * The output: 
-        * **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
+    
+        * **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)
+        
         * **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
 
 -----------------------------------------------------------------------------------------------------------------------------
