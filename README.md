@@ -42,7 +42,7 @@ Installation
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or install this module from local using **```"conda install --use-local Module/*.tar.bz2"```**
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Download and unzip ```[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)```**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Download and unzip ```EPB-master.zip```**  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After decompressing this package, please do the following:
 
