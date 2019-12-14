@@ -26,12 +26,11 @@ Installation
 ***Follow these steps on Linux/OSX:***  
 * **Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
 
-    * Example: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)** 
-    * then run
+    Example: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)** and run
         
-            chmod +x Miniconda3-latest-Linux-x86_64.sh
+                    chmod +x Miniconda3-latest-Linux-x86_64.sh
     
-            ./Miniconda3-latest-Linux-x86_64.sh
+                    ./Miniconda3-latest-Linux-x86_64.sh
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program ```EPB-master``` installation**  
     
@@ -41,39 +40,41 @@ Installation
     
         * Method I: installation from internet file
         
-                conda install -c omnia openmm pdbfixer
+                    conda install -c omnia openmm pdbfixer
             
-                conda install -c openbabel openbabel
+                    conda install -c openbabel openbabel
             
-                pip install pybel
+                    pip install pybel
         
         * Method II: installation from local file 
+        
+            * from ./EPB-master/Module
             
-                conda install --use-local ./EPB-master/Module/*.tar.bz2 
+                    conda install --use-local ./EPB-master/Module/*.tar.bz2 
                 
-                or
+            * from ./EPB-master/Method2/Module
                 
-                conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
+                    conda install --use-local ./EPB-master/Method2/Module/*.tar.bz2
 
     * **```Install Program EPB-master in two methods```**:
     
         * Method I:
         
-                cd EPB-master
+                    cd EPB-master
             
-                    chmod +x EPBLigCharge.py
+                        chmod +x EPBLigCharge.py
                 
             * using "**./EPBLigCharge.py -h/--help**" for help
         
         * Method II:
         
-                cd EPB-master/Method2
+                    cd EPB-master/Method2
             
-                    chmod +x INSTALL.py ./bin/EPBLigCharge.py  
+                        chmod +x INSTALL.py ./bin/EPBLigCharge.py  
             
-                    ./INSTALL.py  
+                        ./INSTALL.py  
             
-                    source ~/.bashrc    
+                        source ~/.bashrc    
             
             * using "**EPBLigCharge.py -h/--help**" for help 
        
@@ -116,7 +117,7 @@ Examples
     
     * Example of how to run the code:
     
-            EPBLigCharge.py -p 1g5s -t 1
+                    EPBLigCharge.py -p 1g5s -t 1
 
     * The output: 
     
@@ -130,11 +131,11 @@ Examples
 
     * Example of how to run the code and the ligand format is "pdb":
             
-            EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
+                    EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
     
     * Example of how to run the code and the ligand format is "mol2":
            
-            EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1
+                    EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1
        
     * The output: 
     
