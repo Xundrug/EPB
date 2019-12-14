@@ -101,7 +101,7 @@ Instructions
 Examples
 --------
 
-* **Calculate polarized ligand charge from a complex structure (https://www.rcsb.org/)**
+* **Calculate polarized ligand charge from a complex structure which from https://www.rcsb.org/**
     
     * Example of how to run the code:
     
@@ -109,11 +109,23 @@ Examples
 
     * The output: 
     
-        * **1g5s.pdb** (download or use local file)  
+        * **1g5s.pdb** (suppose 1g5s.pdb not in current directory, it will download from https://www.rcsb.org/)  
         
         * **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
 
         * **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)  
+
+* **Calculate polarized ligand charge from a complex structure which from local**
+    
+    * Example of how to run the code:
+    
+                    EPBLigCharge.py -p ./example/1g5s.pdb -t 1
+
+    * The output: 
+        
+        * **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
+
+        * **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
 
 * **Calculate polarized ligand charge from a ligand file and a receptor file**
 
