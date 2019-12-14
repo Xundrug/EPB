@@ -36,8 +36,9 @@ Installation
     
     Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it  
     
-    * **Install ```dependency package```**  
-    ** **```conda install -c omnia openmm pdbfixer```**  
+    * **Install ```dependency package```** 
+    
+        ** ```conda install -c omnia openmm pdbfixer```  
 
 * **Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
