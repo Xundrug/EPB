@@ -30,7 +30,7 @@ Installation
     
     then run: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
     
-     **```./Miniconda3-latest-Linux-x86_64.sh```**  
+            **```./Miniconda3-latest-Linux-x86_64.sh```**  
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program ```EPB-master``` installation**  
     
