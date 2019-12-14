@@ -58,7 +58,7 @@ Installation
         
             **```cd EPB-master```**
             
-                **```chmod +x EPBLigCharge.py```**
+                ```chmod +x EPBLigCharge.py```
                 
             using "**```./EPBLigCharge.py -h/--help```**" for help
            
@@ -66,11 +66,11 @@ Installation
         
             **```cd EPB-master/Method2```**
             
-                **```chmod +x INSTALL.py ./bin/EPBLigCharge.py```**
+                ```chmod +x INSTALL.py ./bin/EPBLigCharge.py```  
             
-                **```./INSTALL.py```**
+                ```./INSTALL.py```  
             
-                **```source ~/.bashrc```**
+                ```source ~/.bashrc```  
             
             using "**```EPBLigCharge.py -h/--help```**" for help 
        
