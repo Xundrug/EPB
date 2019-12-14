@@ -39,7 +39,7 @@ Installation
     
     * **```Install dependency package by two methods```** 
     
-        Method I: installation from internet file
+        * Method I: installation from internet file
         
                 conda install -c omnia openmm pdbfixer
             
@@ -47,7 +47,7 @@ Installation
             
                 pip install pybel
         
-        Method II: installation from local file 
+        * Method II: installation from local file 
             
                 conda install --use-local ./EPB-master/Module/*.tar.bz2 
                 
@@ -57,15 +57,15 @@ Installation
 
     * **```Install Program EPB-master in two methods```**:
     
-        Method I:
+        * Method I:
         
                 cd EPB-master
             
                     chmod +x EPBLigCharge.py
                 
-        * using "**./EPBLigCharge.py -h/--help**" for help
+            * using "**./EPBLigCharge.py -h/--help**" for help
         
-        Method II:
+        * Method II:
         
                 cd EPB-master/Method2
             
@@ -75,7 +75,7 @@ Installation
             
                     source ~/.bashrc    
             
-        * using "**EPBLigCharge.py -h/--help**" for help 
+            * using "**EPBLigCharge.py -h/--help**" for help 
        
 ***Sugguest install Program ```EPB-master``` by way II***
 
