@@ -63,7 +63,7 @@ Installation
             
                     chmod +x EPBLigCharge.py
                 
-        * using "**```./EPBLigCharge.py -h/--help```**" for help
+        * using "**./EPBLigCharge.py -h/--help**" for help
         
         Method II:
         
@@ -75,7 +75,7 @@ Installation
             
                     source ~/.bashrc    
             
-        using "**```EPBLigCharge.py -h/--help```**" for help 
+        * using "**EPBLigCharge.py -h/--help**" for help 
        
 ***Sugguest install Program ```EPB-master``` by way II***
 
