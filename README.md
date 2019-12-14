@@ -126,16 +126,18 @@ Examples
 
         * **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)  
 
-* ** Calculate polarized ligand charge from a ligand file and a receptor file**
+* **Calculate polarized ligand charge from a ligand file and a receptor file**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example of how to run the code:
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1```**
+    * Example of how to run the code and the ligand format is "pdb":
             
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1```**
+            EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.pdb -t 1
+    
+    * Example of how to run the code and the ligand format is "mol2":
+           
+            EPBLigCharge.py -p ./example/1g5s_receptor.pdb -l ./example/1g5s_ligand.mol2 -t 1
        
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The output: **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
+    * The output: 
+        * **LigWithNewCharges.mol2** (the ligand file with polarized charge calculated by EPB)  
+        * **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
 
 -----------------------------------------------------------------------------------------------------------------------------
