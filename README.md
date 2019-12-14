@@ -44,7 +44,7 @@ Installation
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **3、Download and unzip ```EPB-master.zip```**  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After decompressing this package, please do the following:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After decompressing [EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master), please do the following:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***```1) Install Method I:```***
 
