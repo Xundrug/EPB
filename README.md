@@ -28,9 +28,9 @@ Installation
 
     ```Example```: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)**  
 
-    ```then run```: **```chmod +x Miniconda3-latest-Linux-x86_64.sh```**
-
-            **```./Miniconda3-latest-Linux-x86_64.sh```**   
+    ```then run```: **chmod +x Miniconda3-latest-Linux-x86_64.sh**
+    
+            **./Miniconda3-latest-Linux-x86_64.sh  
 
 * **Dependency Package(```openbabel、pybel、openmm and pdbfier```) and Program ```EPB-master``` installation**  
     
