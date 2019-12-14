@@ -24,9 +24,7 @@ EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex
 Installation
 ------------
 ***Follow these steps on Linux/OSX:***  
-* **1、Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **1、Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
+* **Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```Example```: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)**  
 
@@ -34,7 +32,7 @@ Installation
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```./Miniconda3-latest-Linux-x86_64.sh```**   
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **2、Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
+* **Open terminal in Mac/Linux, ```install openmm, pdbfixer, openbabel, pybel``` and run**  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **```conda install -c omnia openmm pdbfixer```**  
 
