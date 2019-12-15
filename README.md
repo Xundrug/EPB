@@ -1,5 +1,5 @@
 EPB Charge: This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
-================================================================================================================
+===
 
     EPB - Effective Polarizable Bond
 
@@ -9,11 +9,13 @@ EPB Charge: This is a set of tools for the calculation of polarized ligand charg
 
     All rights reversed 2019    
 
-----------------------------------------------------------------------------------------
+---
 
 Installation
-------------
+---
+
 ***Follow these steps on Linux/OSX:***  
+
 * **Download and install [Python](https://conda.io/miniconda.html) (Version > 2.7)**  
 
     Example: Download the lastest 64-bit Ubuntu/Linux Python 3 file **[Miniconda3-latest-Linux-x86_64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)** and run
@@ -66,10 +68,10 @@ Installation
        
 ***Sugguest using second method to install Program ```EPB-master```***
 
-------------------------------------------------------
+---
 
 Instructions
-------------
+---
 
 ***Open the terminal in Mac/Linux and run "```EPBLigCharge.py -h/--help```"***
 
@@ -94,10 +96,10 @@ Instructions
         -t {0,1}              whether reserve the temporary file and store in temporary directory. 0)NoSave(default), 1)Save.
         -k {0,1}              Whether draw the ligand picture, 0)No(default), 1)Yes.
 
------------------------------------------------------------------------------------------------------------------------------
+---
 
 Examples
---------
+---
 
 * **Calculate polarized ligand charge from a complex structure which from https://www.rcsb.org/**
     
@@ -141,4 +143,4 @@ Examples
         
         * **tmp_file** (is a folder, and contain some temporary files, the information is written in tmp_file.dat)
 
------------------------------------------------------------------------------------------------------------------------------
+---
