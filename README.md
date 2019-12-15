@@ -1,23 +1,13 @@
-EPB Charge: Calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
+EPB Charge: This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
 ================================================================================================================
 
-***[EPB](https://pubs.acs.org/doi/pdf/10.1021/jp4080866) - Effective Polarizable Bond***
+    EPB - Effective Polarizable Bond
 
     Author: GuanFu Duan, gfduan178@163.com
 
     Supervisor: Changge Ji
 
-    This is a set of tools for the calculation of polarized ligand charge from a protein-ligand complex structure with the EPB method.
-
-    All rights reversed 2019
-
-<div align="center">
-    <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2F1758-2946-3-33/MediaObjects/13321_2011_Article_216_Figa_HTML.gif?as=webp" width="500" \><img src="https://avatars1.githubusercontent.com/u/52428936?s=400&v=4" width="250" \>
-</div>  
-
-* ***Reference of [openbabel](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33) and [openmm](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable)***  
-
-* ***It is freely available under an open-source license from: https://openbabel.org/ 、http://openmm.org/***  
+    All rights reversed 2019    
 
 ----------------------------------------------------------------------------------------
 
@@ -37,6 +27,14 @@ Installation
     Download the **[EPB-master.zip](https://codeload.github.com/Xundrug/EPB/zip/master)** and decompression it  
     
     * **```Install dependency package```** 
+    
+        <div align="center">
+            <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2F1758-2946-3-33/MediaObjects/13321_2011_Article_216_Figa_HTML.gif?as=webp" width="500" \><img src="http://openmm.org/img/logos/Icon.svg" \>
+        </div>
+        
+        * [OpenMM](http://openmm.org/): A High Performance Molecular Dynamics Library ([Related paper](https://jcheminf.biomedcentral.com/track/pdf/10.1186/1758-2946-3-33))
+        
+        * [OpenBabel](https://openbabel.org/): An open chemical toolbox ([Related paper](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005659&type=printable))
         
                     conda install -c omnia openmm pdbfixer
             
